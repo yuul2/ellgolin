@@ -4,13 +4,130 @@
 
 
 /* header section */
-.navi-wrap{
-    align-items: center;
+.header-container{
+    border-bottom: 1px solid rgb(204, 204, 204);
 }
-.main-logo  img{
-    max-width: 100%;
+.header_box {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
-/* .main-logo{
-    line-height: 40px;
-    margin: 5px 0 0;
-} */
+.top_logo {
+    width: 16%;
+	text-align: center;
+    padding: 13px 0 10px;
+}
+.top_logo a{
+	display:block;
+}
+.top_logo a img{
+	min-width:100%;
+}
+/*------네비------*/
+.navi_box {
+    position: relative;
+    width: 83%;
+/*     height: 70px; */
+    padding: 11px 0 0;
+}
+.navi_box ul{
+    display: flex;
+	justify-content:flex-end;
+	margin-top:18px;
+	margin-bottom:0;
+}
+/*------네비상위메뉴------*/
+.menu {
+    position: relative;
+    max-width: 150px;
+    height: 30px;
+    text-align: center;
+    font-size: 0;
+	z-index: 999;
+}
+.menu > a {
+    display: block;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+	font-weight:600;
+    transition: 0.5s;
+    color:#333;
+	margin-bottom:5px;
+}
+/*------네비하위메뉴------*/
+.navi_box_bg {
+    display: none;
+    position: absolute;
+    width: 1916px;
+    height: 250px;
+    top: 85px;
+    left: -560px;
+    z-index: 999;
+    background: #f7f7f7;
+}
+.submenu_box {
+    display: none;
+    padding: 25px 0 0;
+}
+.submenu_box > a {
+    display: block;
+    width: 150px;
+    height: 30px;
+    padding: 5px 0;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    cursor: pointer;
+}
+.submenu_box > a:hover {
+    color: #659ca5;
+}
+
+
+@media (max-width:1200px){
+	.header_box {
+    padding: 0 1%;
+}
+
+/*------네비상위메뉴------*/
+.menu {
+    max-width: 130px;
+}
+.menu > a {
+    width: 130px;
+    font-size: 1rem;
+}
+
+/*------네비하위메뉴------*/
+.navi_box_bg {
+    max-width: 1200px;
+    top: 82px;
+    left: -212px;
+}
+	
+.submenu_box > a {
+    width: 130px;
+	font-size:14px;
+}		
+}
+
+@media (max-width:1046px){
+	.navi_box_bg {
+    top: 75px;
+}
+}
+
+@media (max-width:2560px){
+	.navi_box_bg {
+		width:2560px;
+        top: 78px;
+		left:-885px;
+}
+}
+
+/* nav-END */
