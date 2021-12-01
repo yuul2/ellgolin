@@ -1,1 +1,16 @@
 @import url(../css/reset.css);
+@import url(../css/font.css);
+@import url(../css/form.css);
+
+
+/* header section */
+.navi-wrap{
+    align-items: center;
+}
+.main-logo  img{
+    max-width: 100%;
+}
+/* .main-logo{
+    line-height: 40px;
+    margin: 5px 0 0;
+} */
