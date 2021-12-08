@@ -2,9 +2,19 @@
 @import url(../css/font.css);
 @import url(../css/form.css);
 
-
+.boxin1{
+    width: 100%;
+    height: 100vh;
+    background: blue;
+}
+.boxin2{
+    width: 100%;
+    height: 100vh;
+    background: pink;
+}
 /* header section */
 .header-container{
+    background: #fff;
     border-bottom: 1px solid rgb(204, 204, 204);
 }
 .header_box {
@@ -12,6 +22,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    transition-duration: 0.5s;
 }
 .top_logo {
     width: 16%;
@@ -62,23 +73,24 @@
     display: none;
     position: absolute;
     width: 1916px;
-    height: 250px;
+    height: 285px;
     top: 85px;
     left: -560px;
     z-index: 999;
     background: #f7f7f7;
 }
-.submenu_box {
+.menu .submenu_box {
     display: none;
-    padding: 25px 0 0;
+    padding: 25px 36px 0;
 }
+
 .submenu_box > a {
     display: block;
     width: 150px;
-    height: 30px;
+    height: 40px;
     padding: 5px 0;
-    text-align: center;
-    line-height: 30px;
+    text-align: left;
+    line-height: 40px;
     font-size: 16px;
     font-weight: 400;
     color: #000;
