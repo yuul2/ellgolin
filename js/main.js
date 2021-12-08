@@ -1,4 +1,5 @@
 $(function(){
+
     $('.navi_box>ul>li>a').mouseover(function(){
         $('.navi_box_bg').stop().slideDown(300);
         $('.submenu_box').stop().slideDown(300);
