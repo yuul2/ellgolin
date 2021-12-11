@@ -1,5 +1,7 @@
 /* padding */
-
+.g-0{
+   padding: 0 !important;
+}
 .pdrl-5{
     padding: 0 5%;
 }

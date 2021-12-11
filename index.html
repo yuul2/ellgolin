@@ -10,9 +10,12 @@
     <link rel="icon" href="images/favicon-logo.ico">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
+   
     
 </head>
 <body>
@@ -27,16 +30,18 @@
                 <div class="navi_box_bg"></div>
                 <ul>
                     <li class="menu">
-                        <a href="">회사소개</a>
+                        <a href="" class="menu-title">
+                            <span>회사소개</span></a>
                         <div class="submenu_box">
-                            <a href="">CEO인사말</a>
+                            <a href="ceo.html">CEO인사말</a>
                             <a href="">회사개요</a>
                             <a href="">이념과비전</a>
                             <a href="">협력사소개</a>
                         </div>
                     </li>
                     <li class="menu">
-                        <a href="">사업소개</a>
+                        <a href="" class="menu-title">
+                            <span>사업소개</span></a>
                         <div class="submenu_box">
                             <a href="">의약품</a>
                             <a href="">Healthy life style</a>
@@ -47,7 +52,8 @@
                         </div>
                     </li>
                     <li class="menu">
-                        <a href="">R&D</a>
+                        <a href="" class="menu-title">
+                          <span>R&D</span></a>
                         <div class="submenu_box pd-50">
                             <a href="">시설및소개</a>
                             <a href="">연구분야</a>
@@ -55,14 +61,14 @@
                         </div>
                     </li>
                     <li class="menu">
-                        <a href="">홍보관</a>
+                        <a href="" class="menu-title"> <span>홍보관</span></a>
                         <div class="submenu_box pd-45">
                             <a href="">소식및행사</a>
                             <a href="">PR센터</a>
                         </div>
                     </li>
                     <li class="menu">
-                        <a href="">고객문의</a>
+                        <a href="" class="menu-title"><span>고객문의</span></a>
                         <div class="submenu_box">
                             <a href="">오시는길</a>
                             <a href="">1:1문의</a>
@@ -73,11 +79,39 @@
         </div>
     </header>
 
+<!-- header-menu END -->
 
-
-
-
-
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+          <img src="images/slide1.png" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="images/slide2.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/slide3.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/slide4.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/slide5.png" alt="">
+          </div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
 
 
     <footer>
@@ -95,6 +129,7 @@
     </footer>
 
 <script src="js/main.js"></script>
-  
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="js/slide.js"></script>
 </body>
 </html>
