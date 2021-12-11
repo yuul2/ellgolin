@@ -117,7 +117,7 @@
 }
 .menu > a {
     width: 130px;
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 /*------네비하위메뉴------*/
@@ -150,7 +150,83 @@
 /* nav-END */
 
 /* section-1 */
-.swiper {
-    width: 100%;
-    height: 100%;
-  }
+
+
+
+
+
+
+
+
+/* ceo-page */
+.bg-circle{
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.bg-vision{
+    background-image: url(../images/ceobanner.png);
+    background-repeat: no-repeat;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    vertical-align: middle;
+}
+
+.ceo-banner-text{
+    padding: 9.5% 0 !important;
+    text-align: center;
+}
+.company-ceo{
+    font-family: 'paybooc-Bold';
+    color: white;
+    font-size: 48px;
+    line-height: 100px;
+    word-break: break-all;
+}
+.company-explain{
+    color: white;
+}
+
+.ceo-main-tell{
+    font-family: 'paybooc-Bold';
+    word-break: break-all;
+    line-height: 50px;
+}
+.ceo-name{
+    font-family: 'paybooc-Bold';
+    color: #333;
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+.ceo-message-title{
+    font-family: 'paybooc-Bold';
+    font-size: 62px;
+
+}
+.box-deco{
+    width: 130px;
+    height: 6px;
+    background: #50b947;
+    margin: 10px 245px;
+}
+.ceo-name span{
+    font-size: 14px;
+    font-family: 'paybooc-Medium';
+}
+.ceo-message{
+    word-break: keep-all;
+    line-height: 50px;
+}
+.elgoalin-ceo{
+    font-family: 'paybooc-Bold';
+    text-align: end;
+    font-size: 28px;
+    letter-spacing: 5px;
+}
+.elgoalin-ceo span{
+    font-family: 'paybooc-Medium';
+    font-size: 18px;
+    letter-spacing: 2px;
+}
