@@ -149,10 +149,29 @@
 
 /* nav-END */
 
-/* section-1 */
-
-
-
+/* section-1 swiper */
+.slide-bg1, .slide-bg2, .slide-bg3, .slide-bg4, .slide-bg5{
+    height: 590px !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slide-bg1{
+    background-image: url(../images/slide1.png);
+    
+}
+.slide-bg2{
+    background-image: url(../images/slide2.png);
+}
+.slide-bg3{
+    background-image: url(../images/slide3.png);
+}
+.slide-bg4{
+    background-image: url(../images/slide4.png);
+}
+.slide-bg5{
+    background-image: url(../images/slide5.png);
+}
 
 
 

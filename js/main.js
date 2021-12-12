@@ -9,4 +9,3 @@ $(function(){
             $('.submenu_box').stop().slideUp(300);
             });   
 });
-
