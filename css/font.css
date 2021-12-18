@@ -1,5 +1,11 @@
 /* font-css */
 @font-face {
+    font-family: 'paybooc-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'paybooc-Medium';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Medium.woff') format('woff');
     font-weight: normal;
@@ -40,5 +46,10 @@
 .ft-36{
     font-family: 'paybooc-Medium';
     font-size: 36px;
+    color: #333;
+}
+.ft-11{
+    font-family: 'paybooc-Light';
+    font-size: 11px;
     color: #333;
 }

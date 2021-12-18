@@ -70,7 +70,7 @@
 }
 .menu a.menu-title span:hover{
     padding-bottom: 20px;
-    border-bottom: 2px solid #50b947;
+    border-bottom: 2px solid #2254a5;
 }
 /*------네비하위메뉴------*/
 .navi_box_bg {
@@ -88,6 +88,10 @@
     display: none;
     padding: 25px 36px 0;
 }
+.active{
+    padding-bottom: 20px;
+    border-bottom: 2px solid #2254a5;
+}
 
 .submenu_box > a {
     display: block;
@@ -102,7 +106,7 @@
     cursor: pointer;
 }
 .submenu_box > a:hover {
-    color: #50b947 !important;
+    color: #2254a5 !important;
 }
 
 
@@ -149,6 +153,24 @@
 
 /* nav-END */
 
+/* footer-css */
+.privacy-wrap ul li{
+    line-height: 26px;
+    color: #333;
+}
+.privacy-wrap ul li:first-child{
+    width: 8%;
+}
+.privacy-wrap ul li:nth-child(2){
+    width: 1.1%;
+}
+.footer-info-wrap ul li{
+    line-height: 26px;
+    color: #333;
+}
+
+/* footer-css end */
+
 /* section-1 swiper */
 .slide-bg1, .slide-bg2, .slide-bg3, .slide-bg4, .slide-bg5{
     height: 590px !important;
@@ -193,18 +215,18 @@
     vertical-align: middle;
 }
 
-.ceo-banner-text{
+.banner-text{
     padding: 9.5% 0 !important;
     text-align: center;
 }
-.company-ceo{
+.banner-text-title{
     font-family: 'paybooc-Bold';
     color: white;
     font-size: 48px;
     line-height: 100px;
     word-break: break-all;
 }
-.company-explain{
+.banner-explain{
     color: white;
 }
 
@@ -219,12 +241,13 @@
     font-size: 18px;
     letter-spacing: 5px;
 }
-.ceo-message-title{
+
+.page-title-wrap{
+    position: relative;
+}
+.page-title-text{
     font-family: 'paybooc-Bold';
     font-size: 56px;
-}
-.ceo-title-wrap{
-    position: relative;
 }
 .box-deco{
     width: 114px;
@@ -258,14 +281,7 @@
 
 /* 기업개요 section */
 
-.vision-wrap{
-    position: relative;
-}
 
-.vision-title{
-    font-family: 'paybooc-Bold';
-    font-size: 56px;
-}
 .box-deco-vision{
     position: absolute;
     width: 102px;
@@ -285,8 +301,8 @@
     width: 22%;
 }
 .corevalue-content img{
-    width: 92%;
-    padding: 0 8% 0 2%;
+    width: 95.6%;
+    margin: 0 2.2%;
 }
 .corevalue-content-wrap h3{
     text-align: center;
@@ -304,5 +320,33 @@
     word-break: keep-all;
 }
 .creative-wrap, .faith-wrap, .balance-wrap{
-    width: 33.33%;
+    width: 28%;
+}
+.balance-wrap{
+    margin: 0 3% 0 2%;
+}
+
+/* 회사연혁page-css */
+.history-img-wrap img{
+    width: 100%;
+}
+
+/* 협력사소개 page-css */
+.infra-img-wrap img{
+    width: 100%;
+}
+
+
+/* 사업소개 page */
+.bg-business{
+    background-image: url(../images/Produce.jpg);
+    background-repeat: no-repeat;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    vertical-align: middle;
+}
+.banner-sub-text{
+    font-family: 'paybooc-Medium';
+    color: #fff;
 }

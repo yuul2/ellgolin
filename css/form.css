@@ -32,3 +32,28 @@
 .pr-5{
     padding-right: 5%;
 }
+.pr-2{
+    padding-right: 2%;
+}
+.pl-2{
+    padding-left: 2%;
+}
+.pd-lfrt2{
+    padding: 0 2% 0 2%;
+}
+.pd-lfrt1{
+    padding: 0 1% 0 1%;
+}
+.pb-140{
+    padding-bottom: 140px;
+}
+.pb-272{
+    padding-bottom: 272px;
+}
+
+.mrl-4{
+    margin: 0 4%;
+}
+.word-br{
+    word-break: keep-all;
+}
