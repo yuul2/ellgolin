@@ -88,7 +88,7 @@
     display: none;
     padding: 25px 36px 0;
 }
-.active{
+.menu:hover > a > span{
     padding-bottom: 20px;
     border-bottom: 2px solid #2254a5;
 }
@@ -291,6 +291,12 @@
     left: 0;
     transform: translate(17%,50%);
 }
+
+@media(max-width:1920px){
+    .box-deco-vision{
+        top: 54%;
+    } 
+}
 .overview-wrap{
     justify-content: space-between;
 }
@@ -349,4 +355,76 @@
 .banner-sub-text{
     font-family: 'paybooc-Medium';
     color: #fff;
+}
+
+
+
+
+
+
+/* R&D page css */
+
+/* 시설소개 page */
+.bg-facility{
+    background-image: url(../images/Facility.jpg);
+    background-repeat: no-repeat;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    vertical-align: middle;
+}
+.bg-facility .banner-text h1{
+    font-family: 'paybooc-Bold';
+    font-size: 48px;
+    line-height: 100px;
+    word-break: break-all;
+    color: rgba(0, 0, 0, 0.884);
+}
+.bg-facility .banner-text p{
+    color: rgba(0, 0, 0, 0.884);
+}
+.facility-content-wrap p{
+    font-size: 24px;
+    font-family: 'paybooc-Medium';
+    word-break: break-all;
+}
+.facility-content-wrap img{
+    width: 100%;
+}
+/* 시설소개 page end */
+
+/* 연구분야 page css */
+.bg-reserch-field{
+    background-image: url(../images/Analysis.jpg);
+    background-repeat: no-repeat;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    vertical-align: middle;
+}
+.research-field-content-wrap{
+    width: 60%;
+    margin: 0 20%;
+}
+.research-field-content-wrap ul li{
+    width: 33.33%;
+}
+.research-field-content-wrap ul li a{
+    font-size: 22px;
+    font-family: 'paybooc-Bold';
+    line-height: 28px;
+}
+
+
+.bio-wrap{
+    background-image: url(../images/sample-develop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 700px;
+}
+.deco-box{
+    width: 200px;
+    height: 2px;
+    background: yellow;
 }
