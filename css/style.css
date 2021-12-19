@@ -293,8 +293,11 @@
 }
 
 @media(max-width:1920px){
+    .box-deco{
+        top: 48%;
+    }
     .box-deco-vision{
-        top: 54%;
+        top: 48%;
     } 
 }
 .overview-wrap{
@@ -344,6 +347,7 @@
 
 
 /* 사업소개 page */
+
 .bg-business{
     background-image: url(../images/Produce.jpg);
     background-repeat: no-repeat;
@@ -356,12 +360,69 @@
     font-family: 'paybooc-Medium';
     color: #fff;
 }
+.business-content-wrap ul li{
+    width: 25%;
+}
+.business-content-wrap ul li:not(:first-child){
+    color: #666;
+}
+.business-content-wrap ul li a{
+    font-size: 22px;
+    font-family: 'paybooc-Bold';
+    line-height: 28px;
+ }
 
-
-
-
-
-
+.business-content-wrap ul li:hover{
+    color: #c01f25;
+}
+.active2{
+    color: #c01f25;
+}
+.s-medi-img-wrap img{
+    width: 100%;
+}
+.s-medi-text-wrap p{
+    font-family: 'paybooc-Bold';
+    color: #c01f25;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+.s-medi-text-wrap h4{
+    font-family: 'paybooc-Bold';
+    font-size: 30px;
+    line-height: 40px;
+}
+table.medi-table{
+    margin-top: 6%;
+}
+table.medi-table tr{
+    width: 1200px;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #e1e1e1;
+}
+table.medi-table tr td{
+   padding: 6% 4%;
+   font-family: 'paybooc-Medium';
+   font-size: 18px;
+   line-height: 28px;
+   word-break: keep-all;
+   vertical-align: middle;
+}
+.add-content a{
+    font-family: 'paybooc-Medium';
+    font-size: 30px;
+    line-height: 40px;
+    vertical-align: middle;
+}
+.add-content a i{
+    vertical-align: middle;
+}
+.add-content{
+    padding-top: 6%;
+}
+.medi-wrap-pd{
+    padding: 8% 4% 8% 1% !important;
+}
 /* R&D page css */
 
 /* 시설소개 page */
@@ -501,4 +562,22 @@ table.results-table tr:not(:last-child) td{
 }
 table.results-table tr:last-child td{
     border-bottom: 2px solid #333;
+}
+
+
+/* 홍보관 - 소식과행사 page css  */
+
+.bg-information {
+    background-image: url(../images/PR.jpg);
+    background-repeat: no-repeat;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    vertical-align: middle;
+}
+.bg-information .banner-text h1{
+    color: #333;
+}
+.bg-information .banner-text p{
+    color: #333;
 }
