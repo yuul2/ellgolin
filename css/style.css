@@ -216,7 +216,7 @@
 }
 
 .banner-text{
-    padding: 9.5% 0 !important;
+    padding: 10% 0 !important;
     text-align: center;
 }
 .banner-text-title{
@@ -408,6 +408,7 @@
 }
 .research-field-content-wrap ul li{
     width: 33.33%;
+    padding-bottom: 18px;
 }
 .research-field-content-wrap ul li a{
     font-size: 22px;
@@ -416,15 +417,88 @@
 }
 
 
-.bio-wrap{
+.bg-bio{
     background-image: url(../images/sample-develop.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 700px;
+    min-height: 600px;
+}
+
+.bio-title{
+    font-family: 'paybooc-Bold';
+    font-size: 36px;
+    color: #fff;
+    line-height: 50px;
+}
+.bio-content-title p{
+    font-family: 'paybooc-Medium';
+    font-size: 20px;
 }
 .deco-box{
-    width: 200px;
-    height: 2px;
+    width: 100px;
+    height:4px;
     background: yellow;
+}
+.anti-content h3{
+    font-size: 24px;
+    font-family: 'paybooc-Bold';
+    color: #fff;
+    line-height: 26px;
+}
+.anti-content p{
+    font-size: 16px;
+    font-family: 'paybooc-Medium';
+    color: #fff;
+    line-height: 28px;
+    padding-top: 12px;
+}
+.anti-content{
+    padding-bottom: 60px;
+}
+.anti-content:first-child{
+    padding-top: 26px;
+}
+.chemical{
+    display: none;
+}
+.pharmaceuticals{
+    display: none;
+}
+.research-field-content-wrap ul li.active{
+    border-bottom: 3px solid #c01f25;
+}
+
+
+
+
+/* 연구 성과 page css */
+table.results-table{
+    background: #ffffff;
+}
+table.results-table tr th{
+    vertical-align: middle;
+    font-size: 20px;
+    font-family: 'paybooc-Bold';
+    line-height: 36px;
+    height: 80px;
+    padding:20px;
+}
+table.results-table thead tr{
+  border-top: 2px solid #333;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+table.results-table tr td{
+    vertical-align: middle;
+    font-size: 20px;
+    line-height: 36px;
+    height: 80px;
+    padding: 15px;
+}
+table.results-table tr:not(:last-child) td{
+    border-bottom: 1px solid #e6e6e6;
+}
+table.results-table tr:last-child td{
+    border-bottom: 2px solid #333;
 }

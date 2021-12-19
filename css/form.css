@@ -5,6 +5,9 @@
 .pdrl-5{
     padding: 0 5%;
 }
+.pd-10{
+    padding: 10% 0;
+}
 .pd-50{
     padding: 25px 50px 0 !important;
 }
@@ -54,6 +57,12 @@
 .mrl-4{
     margin: 0 4%;
 }
+.mt-8{
+    margin-top: 8%;
+}
 .word-br{
     word-break: keep-all;
+}
+.vertical-m{
+    vertical-align: middle;
 }
