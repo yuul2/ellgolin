@@ -408,20 +408,58 @@ table.medi-table tr td{
    word-break: keep-all;
    vertical-align: middle;
 }
-.add-content a{
-    font-family: 'paybooc-Medium';
-    font-size: 30px;
+.add-content-wrap a{
+    font-family: 'paybooc-Bold';
+    font-size: 20px;
     line-height: 40px;
     vertical-align: middle;
 }
-.add-content a i{
+.add-content-wrap a i{
+    vertical-align: middle;
+    font-weight: 700;
+}
+.closed-content-wrap a{
+    font-family: 'paybooc-Bold';
+    font-size: 20px;
+    line-height: 40px;
     vertical-align: middle;
 }
-.add-content{
-    padding-top: 6%;
+.closed-content-wrap a i{
+    vertical-align: middle;
+    font-weight: 700;
+}
+.add-content-wrap{
+    padding-top: 3%;
+}
+.closed-content-wrap{
+    display: none;
 }
 .medi-wrap-pd{
     padding: 8% 4% 8% 1% !important;
+}
+
+.s-medi-description table tr:first-child td{
+    border-top: 2px solid #333;
+    border-bottom: 1px solid #e3e3e3;
+    padding: 20px 30px;
+}
+.s-medi-description table tr:not(:first-child) td{
+    padding: 20px 30px;
+    border-bottom: 1px solid #e3e3e3;
+}
+.s-medi-description table tr td:first-child{
+    font-size: 18px;
+    font-family: 'paybooc-Bold';
+}
+.s-medi-description table tr td:nth-child(2){
+    line-height: 30px;
+}
+.caution-text p{
+    font-family: 'paybooc-Bold';
+    color: #c01f25;
+}
+.s-medi-description {
+    display: none;
 }
 /* R&D page css */
 

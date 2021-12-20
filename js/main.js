@@ -12,6 +12,7 @@ $(function(){
             
         // 네비게이션 end
 
+
      $('.bio-si').click(function(){
          $('div.bio-similar').css('display','block');
          $('div.pharmaceuticals').css('display','none');
@@ -50,7 +51,15 @@ $('.chemi-gene').on('click',function(){
 });
    
         
-        
-        
-       
+   $('.add-content').on('click',function(){
+       $('.s-medi-description').stop().slideDown(300);
+       $('.add-content').css('display','none');
+       $('.closed-content-wrap').css('display','block');
+   });
+
+   $('#closed').on('click',function(){
+    $('.s-medi-description').stop().slideUp(300);
+    $('.add-content').css('display','block');
+    $('.closed-content-wrap').css('display','none');
 });
+});   
