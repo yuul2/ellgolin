@@ -376,7 +376,7 @@
     color: #c01f25;
 }
 .active2{
-    color: #c01f25;
+    color: #c01f25 !important;
 }
 .s-medi-img-wrap img{
     width: 100%;
@@ -433,6 +433,32 @@ table.medi-table tr td{
 .closed-content-wrap{
     display: none;
 }
+.add-content-wrap2 a{
+    font-family: 'paybooc-Bold';
+    font-size: 20px;
+    line-height: 40px;
+    vertical-align: middle;
+}
+.add-content-wrap2 a i{
+    vertical-align: middle;
+    font-weight: 700;
+}
+.closed-content-wrap2 a{
+    font-family: 'paybooc-Bold';
+    font-size: 20px;
+    line-height: 40px;
+    vertical-align: middle;
+}
+.closed-content-wrap2 a i{
+    vertical-align: middle;
+    font-weight: 700;
+}
+.add-content-wrap2{
+    padding-top: 3%;
+}
+.closed-content-wrap2{
+    display: none;
+}
 .medi-wrap-pd{
     padding: 8% 4% 8% 1% !important;
 }
@@ -479,6 +505,15 @@ tr.materials-wrap table thead tr th{
     font-family: 'paybooc-Bold';
 }
 
+.meta-page{
+    display: none;
+}
+.detox-meta-wrap{
+    display: none;
+}
+.meta-description-wrap{
+    display: none;
+}
 /* R&D page css */
 
 /* 시설소개 page */

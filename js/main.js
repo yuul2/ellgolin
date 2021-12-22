@@ -12,7 +12,86 @@ $(function(){
             
         // 네비게이션 end
 
+        $('.add-content').on('click',function(){
+            $('.s-medi-description').stop().slideDown(300);
+            $('.add-content').css('display','none');
+            $('.closed-content-wrap').css('display','block');
+        });
+     
+        $('#closed').on('click',function(){
+         $('.s-medi-description').stop().slideUp(300);
+         $('.add-content').css('display','block');
+         $('.closed-content-wrap').css('display','none');
+     });
 
+     $('.add-content2').on('click',function(){
+        $('.s-medi-description').stop().slideDown(300);
+        $('.add-content2').css('display','none');
+        $('.closed-content-wrap2').css('display','block');
+    });
+ 
+    $('#closed2').on('click',function(){
+     $('.s-medi-description').stop().slideUp(300);
+     $('.add-content2').css('display','block');
+     $('.closed-content-wrap2').css('display','none');
+ });
+
+
+
+
+
+     $('.g-medicine').on('click',function(){
+         $('ul.business>li:nth-child(2)').addClass('active2');
+         $('ul.business>li:first-child').removeClass('active2');
+         $('ul.business>li:nth-child(3)').removeClass('active2');
+         $('ul.business>li:last-child').removeClass('active2');
+     });
+     $('.h-food').on('click',function(){
+        $('ul.business>li:nth-child(3)').addClass('active2');
+        $('ul.business>li:first-child').removeClass('active2');
+        $('ul.business>li:nth-child(2)').removeClass('active2');
+        $('ul.business>li:last-child').removeClass('active2');
+    });
+    $('.n-medicine').on('click',function(){
+        $('ul.business>li:last-child').addClass('active2');
+        $('ul.business>li:first-child').removeClass('active2');
+        $('ul.business>li:nth-child(2)').removeClass('active2');
+        $('ul.business>li:nth-child(3)').removeClass('active2');
+    });
+    $('.s-medicine').on('click',function(){
+        $('ul.business>li:first-child').addClass('active2');
+        $('ul.business>li:nth-child(2)').removeClass('active2');
+        $('ul.business>li:nth-child(3)').removeClass('active2');
+        $('ul.business>li:last-child').removeClass('active2');
+    });
+    
+    $('.h-food').click(function(){
+        $('.meta-page').css('display','block');
+        $('.detox-page').css('display','none');
+        $('.detox-meta-wrap').css('display','block');
+        $('.detox-intro-wrap').css('display','none');
+        $('.meta-description-wrap').css('display','block');
+        $('.detox-description-wrap').css('display','none');
+    });
+    $('.s-medicine').click(function(){
+        $('.meta-page').css('display','none');
+        $('.detox-page').css('display','block');
+        $('.detox-meta-wrap').css('display','none');
+        $('.detox-intro-wrap').css('display','block');
+        $('.meta-description-wrap').css('display','none');
+        $('.detox-description-wrap').css('display','block');
+    });
+        
+  
+
+
+
+
+
+
+
+
+// R&D 영역 탭화면 기능구현
      $('.bio-si').click(function(){
          $('div.bio-similar').css('display','block');
          $('div.pharmaceuticals').css('display','none');
@@ -49,17 +128,5 @@ $('.chemi-gene').on('click',function(){
     $('ul.research>li:nth-child(2)').removeClass('active')
 
 });
-   
-        
-   $('.add-content').on('click',function(){
-       $('.s-medi-description').stop().slideDown(300);
-       $('.add-content').css('display','none');
-       $('.closed-content-wrap').css('display','block');
-   });
 
-   $('#closed').on('click',function(){
-    $('.s-medi-description').stop().slideUp(300);
-    $('.add-content').css('display','block');
-    $('.closed-content-wrap').css('display','none');
-});
 });   
