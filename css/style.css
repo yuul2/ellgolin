@@ -530,11 +530,87 @@ tr.materials-wrap table thead tr th{
 
 /* 고부가가치 제품 */
 
+.high-life-content-wrap ul li{
+    width: 50%;
+}
+.high-life-content-wrap ul li:not(:first-child){
+    color: #666;
+}
+.high-life-content-wrap  ul li a{
+    font-size: 22px;
+    font-family: 'paybooc-Bold';
+    line-height: 28px;
+ }
+
+.high-life-content-wrap ul li:hover{
+    color: #c01f25;
+}
 .high-life-text{
     font-size: 24px;
 }
 .high-healty-food-wrap img{
     width: 100%;
+}
+.brown-text-wrap p{
+    font-family: 'paybooc-Bold';
+    color: #c01f25;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+.brown-text-wrap h4{
+    font-family: 'paybooc-Bold';
+    font-size: 30px;
+    line-height: 40px;
+}
+table.high-food-table{
+    margin-top: 6%;
+}
+table.high-food-table tr{
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #e1e1e1;
+}
+table.high-food-table tr td{
+    padding: 6% 4%;
+    font-family: 'paybooc-Medium';
+    font-size: 18px;
+    line-height: 28px;
+    word-break: keep-all;
+    vertical-align: middle;
+}
+.high-life-wrap{
+    padding: 8% 4% 8% 1% !important;
+}
+.bg-bg{
+    background: rgba(255, 253, 247, 0.733);
+}
+.daily-all-wrap{
+    display: none;
+}
+
+
+
+/* 영업마케팅 page css */
+.bg-marketing{
+    background-image: url(../images/INFRA.jpg);
+    background-repeat: no-repeat;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    vertical-align: middle;
+}
+.market-text{
+    font-family: 'paybooc-Bold';
+    font-size: 24px;
+    line-height: 30px;
+}
+.market-img-wrap img{
+    width: 100%;
+}
+.market-text-wrap p{
+    font-family: 'paybooc-Medium';
+    font-size: 28px;
+    line-height: 38px;
+    word-break: keep-all;
 }
 /* R&D page css */
 

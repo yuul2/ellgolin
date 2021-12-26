@@ -11,7 +11,22 @@ $(function(){
             
             
         // 네비게이션 end
+        
+        // 고부가가치 page tab-menu
+        $('.food').on('click',function(){
+            $('ul.high-tab > li:first-child').addClass('active2');
+            $('ul.high-tab > li:last-child').removeClass('active2');
+            $('.high-food-all-wrap').css('display','block');
+            $('.daily-all-wrap').css('display','none');
+        });
+        $('.daily').on('click',function(){
+            $('ul.high-tab > li:last-child').addClass('active2');
+            $('ul.high-tab > li:first-child').removeClass('active2');
+            $('.daily-all-wrap').css('display','block');
+            $('.high-food-all-wrap').css('display','none');
+        });
 
+        // 비즈니스 page tab-menu 
         $('.add-content').on('click',function(){
             $('.s-medi-description').stop().slideDown(300);
             $('.add-content').css('display','none');
