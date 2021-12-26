@@ -87,7 +87,16 @@
     line-height: 46px;
     color: #fff;
 }
-
+.ft-24{
+    font-family: 'paybooc-Bold';
+    font-size: 24px;
+    padding-bottom: 20px;
+    margin: 0 !important;
+}
+.ft-18{
+    font-family: 'paybooc-Medium';
+    font-size: 18px;
+}
 
 
 /* color css */

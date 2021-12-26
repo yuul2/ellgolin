@@ -2,7 +2,7 @@
 @import url(../css/font.css);
 @import url(../css/form.css);
 
-.boxin1{
+/* .boxin1{
     width: 100%;
     height: 100vh;
     background: blue;
@@ -11,7 +11,7 @@
     width: 100%;
     height: 100vh;
     background: pink;
-}
+} */
 /* header section */
 .header-container{
     background: #fff;
@@ -159,7 +159,7 @@
     color: #333;
 }
 .privacy-wrap ul li:first-child{
-    width: 8%;
+    width: 10%;
 }
 .privacy-wrap ul li:nth-child(2){
     width: 1.1%;
@@ -214,7 +214,7 @@
 }
 
 .banner-text{
-    padding: 10% 0 !important;
+    padding: 12% 0 !important;
     text-align: center;
 }
 .banner-text-title{
@@ -626,10 +626,10 @@ table.high-food-table tr td{
     font-size: 48px;
     line-height: 100px;
     word-break: break-all;
-    color: rgba(0, 0, 0, 0.884);
+    color: #000;
 }
 .bg-facility .banner-text p{
-    color: rgba(0, 0, 0, 0.884);
+    color: #000;
 }
 .facility-content-wrap p{
     font-size: 24px;
@@ -763,8 +763,315 @@ table.results-table tr:last-child td{
     vertical-align: middle;
 }
 .bg-information .banner-text h1{
-    color: #333;
+    color: #000;
 }
 .bg-information .banner-text p{
-    color: #333;
+    color: #000;
+}
+
+/* 홍보관 - pr센터 page css  */
+.video-wrap video{
+    width: 100%;
+}
+.video-deco{
+    position: relative;
+}
+
+.video-wrap{
+    position: relative;
+}
+
+.video-deco-box{
+    position: absolute;
+    width: 600px;
+    height: 336px;
+    background: #9bbcf1;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transform: translate(-2%,2%);
+}
+.img-wrap{
+    position: relative;
+    width: 470px;
+    height: 520px;
+    right: 0;
+    bottom: 0;
+    background: #9bbcf1;
+    
+}
+.img-wrap img{
+    position: absolute;
+    top: 0;
+right: 0;
+transform: translate(-3%,-3%);
+}
+.img-deco img{
+    width: 100%;
+}
+.img-description h1, .video-description h1{
+    font-size: 28px;
+    font-family: 'paybooc-Bold';
+    padding-top: 90px;
+    padding-bottom: 15px;
+}
+.img-description p, .video-description p{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.img-description p{
+    word-break: keep-all;
+}
+
+/* 오시는 길 */
+.bg-contact{
+    background-image: url(../images/Information.jpg);
+    background-repeat: no-repeat;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    vertical-align: middle;
+}
+.address-wrap{
+    padding:14% 0 !important;
+    text-align: center !important;
+}
+.address-wrap h1{
+    color: #000;
+}
+#map{
+    width: 100%;
+    height: 530px;
+    margin: 6% 0;
+}
+.sub-goldline div{
+    width: 72px;
+    height: 26px;
+    border-radius: 13px;
+    color: #fff;
+    font-size: 14px;
+    margin-right: 10px;
+    background: #b59122;
+    line-height: 26px;
+}
+
+.map-button-wrap a{
+    width: 45%;
+    padding: 20px;
+    margin-right: 2.5%;
+}
+.map-button-wrap a i{
+   width: 25%;
+    text-align: center;
+    vertical-align: middle;
+}
+.map-button-wrap a p{
+    width: 75%;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 0 !important;
+ 
+}
+.naver{
+    border: 1px solid #63c15e;
+    border-radius:5px ; 
+}
+.kakao{
+    border: 1px solid #facf33;
+    border-radius: 5px;
+}
+/* 오시는길 end  */
+
+/* 1:1문의하기  */
+.inquiry-contents form{
+    margin-top: 40px;
+    padding: 40px;
+    border-top: 2px solid #222222;
+    /* border-bottom: 2px solid #222222; */
+}
+.formlist > ul{
+    border-bottom: 2px solid #222222;
+}
+.formlist > ul > li {
+    align-items: center;
+    margin-top: 20px;
+}
+.formlist > ul > li > label{
+    width: 160px;
+    font-size: 17px;
+    color: #080a14;
+    line-height: 26px;
+    font-family: 'paybooc-Bold';
+}
+.formlist > ul > li > label > sup{
+    font-size: 17px;
+    margin-left: 5px;
+    color: #e9715c;
+}
+.formlist input{
+    font-family: 'paybooc-Medium';
+    color: #222;
+}
+.formlist input:focus,.formlist select:focus,.inquiry-contents textarea:focus{
+    outline: 1px solid #2254a5;
+}
+
+
+.formlist .inputbox input.name{
+    width: 328px;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    background: #fafafa !important;
+}
+.formlist .inputbox input{
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    background: #fafafa !important;
+}
+.inquiry-contents form select {
+    width: 150px;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    font-family: "paybooc-Medium";
+    font-size: 16px;
+    color: #080a14;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../images/num-arrow-down.png)no-repeat #fafafa;
+    background-position: 85% center;
+}
+.inquiry-contents .formlist .phone-num .inputbox span.bar{
+    display: block;
+    align-items: center;
+    width: 12px !important;
+    height: 1px !important;
+    margin: 24px 8px !important;
+    background-color: #080a14 !important;
+}
+.inquiry-contents .phone-num input{
+    width: 500px;
+}
+
+.inquiry-contents textarea {
+    width: 1010px;
+    min-height: 180px;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    resize: none;
+    background: rgb(250, 250, 250);
+}
+.inquiry-contents .hr {
+    width: 1260px;
+    height: 1px !important;
+    margin: 40px 0;
+    margin-left: -40px;
+    background: #d3d3d3;
+    box-sizing: border-box !important;
+}
+.inquiry-contents .privacy {
+    width: 1020px;
+    height: 210px;
+    padding-top: 30px;
+    padding-left: 30px;
+    background: #fafafa;
+    border-radius: 6px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+
+}
+.inquiry-contents .privacy h3{
+    font-family: 'paybooc-Bold';
+    color: #000001;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.inquiry-contents .privacy p{
+    color: #888;
+    line-height: 26px;
+    padding-left: 15px;
+    padding-right: 45px;
+    margin-bottom: 20px;
+}
+.inquiry-contents .agree-check {
+    margin: 20px 0 40px;
+}
+.agree-check input[type="checkbox"] {
+    position: absolute;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+/* .agree-check input[type="checkbox"] + label:before {
+    content: ' ';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin: -2px 8px 0 0;
+    text-align: center;
+    vertical-align: middle;
+    background: #fff;
+    border: 1px solid #666;
+    border-radius: 3px;
+    box-sizing: border-box;
+} */
+.commbtn{
+    width : 200px;
+    display : inline-block;
+    height : 58px;
+    margin-top : 20px;
+    font-size : 18px;
+    font-family: 'paybooc-Bold';
+    line-height : 35px;
+    border-radius : 6px;
+    border: none;
+    text-align : center;
+}
+
+.commbtn.blue {
+    background : #2254a5;
+    color : #fff;
+}
+/* 1:1문의 end */
+/* 폼 전송완료 후 팝업창 css  */
+.thankyou_message {
+    position : fixed;
+    top : 0;
+    bottom : 0;
+    left : 0;
+    right : 0;
+    background : rgba(0, 0, 0, 0.7);
+    z-index : 999;
+    display : none;
+}
+.thankyou_message > section > h1 {
+    color : #59c3c3;
+    font-size : 25px;
+    font-weight : 700;
+    margin-bottom : 20px;
+}
+.thankyou_message > section {
+    width : 550px;
+    margin : 10% auto;
+    padding : 20px 20px 120px;
+    border-radius : 5px;
+    background: #fff;
+    background-size : 240px;
+    color : #3c4147;
 }

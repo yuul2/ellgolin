@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>엘골인 바이오</title>
+        <link rel=" shortcut" href="/images/favicon-logo.ico">
+        <link rel="icon" href="/images/favicon-logo.ico">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/jquery-3.3.1.min.js"></script>
+        <script src="/js/jquery.sticky.js"></script>
+
+    </head>
+    <body>
+
+        <header class="header-container fixed-top">
+            <div class="header_box">
+                <div class="top_logo">
+                    <a href="/index.html">
+                        <img src="/images/main-logo.png" alt="엘골인로고"></a>
+                </div>
+                <div class="navi_box">
+                    <div class="navi_box_bg"></div>
+                    <ul>
+                        <li class="menu">
+                            <a href="ceo.html" class="menu-title">
+                                <span>회사소개</span></a>
+                            <div class="submenu_box">
+                                <a href="ceo.html">CEO인사말</a>
+                                <a href="vision.html">이념과비전</a>
+                                <a href="history.html">회사연혁</a>
+                                <a href="infra.html">협력사소개</a>
+                            </div>
+                        </li>
+                        <li class="menu">
+                            <a href="business.html" class="menu-title">
+                                <span>사업소개</span></a>
+                            <div class="submenu_box">
+                                <a href="business.html">의약품</a>
+                                <a href="healthy.html">Healthy life style</a>
+                                <a href="">화장품</a>
+                                <a href="marketing.html">영업/마케팅인프라</a>
+                                <a href="">Foundation</a>
+                                <a href="">프랜차이즈</a>
+                            </div>
+                        </li>
+                        <li class="menu">
+                            <a href="facility.html" class="menu-title">
+                                <span>R&D</span></a>
+                            <div class="submenu_box pd-50">
+                                <a href="facility.html">시설및소개</a>
+                                <a href="research-field.html">연구분야</a>
+                                <a href="results.html">연구성과</a>
+                            </div>
+                        </li>
+                        <li class="menu">
+                            <a href="notice.html" class="menu-title">
+                                <span>홍보관</span></a>
+                            <div class="submenu_box pd-45">
+                                <a href="notice.html">소식및행사</a>
+                                <a href="prcenter.html">PR센터</a>
+                            </div>
+                        </li>
+                        <li class="menu">
+                            <a href="adress.html" class="menu-title">
+                                <span>고객문의</span></a>
+                            <div class="submenu_box">
+                                <a href="adress.html">오시는길</a>
+                                <a href="contact.html">1:1문의</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="container-fluid bg-circle pb-140">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8 bg-contact">
+                    <div class="banner-text address-wrap">
+                        <h1 class="banner-text-title">Contact</h1>
+                        <!-- <p class="banner-explain">엘골인바이오의 주요 소식을 전합니다</p> -->
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-4 pt-6 page-title-wrap">
+                    <div class="box-deco-vision"></div>
+                    <h1 class="page-title-text">오시는길</h1>
+                </div>
+                <div class="col-4"></div>
+                <div class="col-2"></div>
+            </div>
+
+          <div class="row">
+              <div class="col-2"></div>
+              <div class="col-8">
+                <div id="map"></div>
+
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bd75916a3351a89d4f41af0255a84159"></script>
+<script>
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = { 
+        center: new kakao.maps.LatLng(37.62382196649802, 126.71224779487379), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };
+
+var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+// 마커가 표시될 위치입니다 
+var markerPosition  = new kakao.maps.LatLng(37.62382196649802, 126.71224779487379); 
+
+// 마커를 생성합니다
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+
+// 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+// marker.setMap(null);    
+</script>
+              </div>
+              <div class="col-2"></div>
+          </div>
+          <div class="row">
+              <div class="col-2"></div>
+              <div class="col-4">
+                  <div class="address-info-wrap">
+                      <h3 class="ft-24">주소</h3>
+                      <p class="ft-18">우)16924, 주소 경기도 김포시 북변중로 23
+                        엘골인 바이오 사옥
+                        </p>
+                  </div>
+                  <div class="tel-info-wrap pt-12">
+                      <h3 class="ft-24">대표번호</h3>
+                      <p class="ft-18">Tel : 031-736-6700, 031-260-9600
+                        </p>
+                        <p class="ft-18">
+                            Fax : 031-260-9232</p>
+                  </div>
+           
+              </div>
+              <div class="col-4">
+                <div class="subway-wrap">
+                    <h3 class="ft-24">지하철</h3>
+                    <div class="sub-goldline d-flex">
+                        <div class="text-center">김포골드</div>
+                        <p class="ft-18">사우(김포시청)역 1번 출구에서 852m</p>
+                    </div>
+                   
+                </div>
+
+                <div class="map-button-wrap d-flex pt-12">
+                    <a href="https://map.naver.com/v5/entry/place/1446425239?c=14105567.6041621,4526366.0159491,17,0,0,0,dh" class="d-flex text-center naver">
+                      <i><img src="images/naver_icon.png" alt=""></i>
+                      <p class="ft-18">네이버 맵으로 길찾기</p>
+                    </a>
+               <a href="http://kko.to/-XpkKJVID"class="d-flex kakao">
+                   <i><img src="images/kakao_icon.png" alt=""></i>
+                   <p class="ft-18">카카오 맵으로 길찾기</p>
+               </a>
+                </div>
+              </div>
+              <div class="col-2"></div>
+
+          </div>
+
+     
+</div>
+
+
+        
+
+        <footer>
+            <div class="footer-wrap bg-light">
+                <div class="container-fluid">
+                    <div class="row pt-5 pb-3">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <div class="privacy-wrap">
+                                <ul class="d-flex">
+                                    <li><a href="">개인정보처리방침</a></li>
+                                    <li>|</li>
+                                    <li><a href="">이메일집단수집거부</a></li>
+                                </ul>
+                            </div>
+                            <div class="brand-logo pb-4">
+                                <img src="images/main-logo.png" alt="">
+                            </div>
+                            <div class="footer-info-wrap">
+                                <ul>
+                                    <li>주소 : 경기 김포시 북변중로23 </li>
+                                    <li class="info-tel">Tel : 000-000-0000 &nbsp;&nbsp; 사업자등록번호 : 374-81-01670 &nbsp;&nbsp; 대표 : 차준헌</li>
+                                    <li>Copyright ⓒ 2021 Elgoalin. All rights reserved.</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/main.js"></script>
+        
+
+    </body>
+</html>

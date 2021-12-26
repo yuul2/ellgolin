@@ -144,4 +144,8 @@ $('.chemi-gene').on('click',function(){
 
 });
 
+// 팝업창
+$(".close").click(function(){
+    $(".thankyou_message").css("display", "none");
+});
 });   
