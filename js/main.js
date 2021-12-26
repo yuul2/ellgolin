@@ -126,21 +126,21 @@ $(function(){
     });
 
 $('.bio-si').on('click',function(){
-    $('ul.research>li:first-child').addClass('active');
-    $('ul.research>li:last-child').removeClass('active');
-    $('ul.research>li:nth-child(2)').removeClass('active')
+    $('ul.research>li:first-child').addClass('active2');
+    $('ul.research>li:last-child').removeClass('active2');
+    $('ul.research>li:nth-child(2)').removeClass('active2')
 
 });
 $('.new-bio').on('click',function(){
-    $('ul.research>li:first-child').removeClass('active');
-    $('ul.research>li:last-child').removeClass('active');
-    $('ul.research>li:nth-child(2)').addClass('active')
+    $('ul.research>li:first-child').removeClass('active2');
+    $('ul.research>li:last-child').removeClass('active2');
+    $('ul.research>li:nth-child(2)').addClass('active2')
 
 });
 $('.chemi-gene').on('click',function(){
-    $('ul.research>li:first-child').removeClass('active');
-    $('ul.research>li:last-child').addClass('active');
-    $('ul.research>li:nth-child(2)').removeClass('active')
+    $('ul.research>li:first-child').removeClass('active2');
+    $('ul.research>li:last-child').addClass('active2');
+    $('ul.research>li:nth-child(2)').removeClass('active2')
 
 });
 

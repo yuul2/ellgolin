@@ -757,9 +757,10 @@ table.high-food-table tr td{
 .pharmaceuticals{
     display: none;
 }
-.research-field-content-wrap ul li.active{
-    border-bottom: 3px solid #c01f25;
+.research-field-content-wrap ul li:hover{
+    color: #c01f25;
 }
+
 
 
 
