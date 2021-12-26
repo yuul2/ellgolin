@@ -87,6 +87,35 @@
     line-height: 46px;
     color: #fff;
 }
+@media(max-width:1600px){
+    .ft-70-wh{
+        font-size: 52px;
+        letter-spacing: -3px;
+        line-height: 50px;
+        color: #fff;
+    }
+    .ft-70{
+        font-size: 52px;
+        letter-spacing: -3px;
+        line-height: 50px;
+    }
+    .ft-36-md-bk{
+        font-size: 26px;
+    }
+    .ft-36-md-wh{
+        font-size: 26px;
+        color: #fff;
+    }
+    .ft-26{
+        font-size: 18px;
+        line-height: 38px;
+    }
+    .ft-26-wh{
+        font-size: 18px;
+        line-height: 38px;
+        color: #fff;
+    }
+}
 .ft-24{
     font-family: 'paybooc-Bold';
     font-size: 24px;
@@ -97,7 +126,15 @@
     font-family: 'paybooc-Medium';
     font-size: 18px;
 }
-
+.ft-18-m{
+    font-family: 'paybooc-Medium';
+    font-size: 18px;
+}
+@media(max-width:1600px){
+    .ft-18-m{
+        font-size: 12px !important;
+    }
+}
 
 /* color css */
 .ft-cl-wh{

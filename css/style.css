@@ -168,7 +168,12 @@
     line-height: 26px;
     color: #333;
 }
+@media(max-width:1600px){
+    .privacy-wrap ul li:first-child{
+        width: 14%;
+    }
 
+}
 /* footer-css end */
 
 /* section-1 swiper */
@@ -217,6 +222,12 @@
     padding: 12% 0 !important;
     text-align: center;
 }
+@media(max-width:1600px){
+    .banner-text{
+        padding: 16% 0 !important;
+        text-align: center;
+    }
+}
 .banner-text-title{
     font-family: 'paybooc-Bold';
     color: white;
@@ -246,6 +257,11 @@
 .page-title-text{
     font-family: 'paybooc-Bold';
     font-size: 56px;
+}
+@media(max-width:1600px){
+    .page-title-text{
+        font-size: 48px;
+    }
 }
 .box-deco{
     width: 114px;
@@ -307,8 +323,16 @@
         top: 48%;
     } 
     .box-deco-vision-2{
-        top: 40%;
+        top: 35%;
     }
+}
+@media(max-width:1600px){
+    .box-deco{
+        top: 42%;  
+    }
+    .box-deco-vision{
+        top: 42%;
+    } 
 }
 .overview-wrap{
     justify-content: space-between;
@@ -370,6 +394,14 @@
 .banner-sub-text{
     font-family: 'paybooc-Medium';
     color: #fff;
+}
+.medicine-txt{
+    font-size: 24px;
+}
+@media(max-width:1600px){
+    .medicine-txt{
+        font-size: 16px;
+    }
 }
 .business-content-wrap ul li{
     width: 25%;
@@ -485,6 +517,7 @@ table.medi-table tr td{
     padding: 20px 30px;
     border-bottom: 1px solid #e3e3e3;
     vertical-align: middle;
+    word-break: keep-all;
 }
 .s-medi-description table tr td:first-child{
     font-size: 18px;
@@ -546,6 +579,11 @@ tr.materials-wrap table thead tr th{
 .high-life-text{
     font-size: 24px;
 }
+@media(max-width:1600px){
+    .high-life-text{
+        font-size: 16px;
+    }
+}
 .high-healty-food-wrap img{
     width: 100%;
 }
@@ -597,9 +635,15 @@ table.high-food-table tr td{
     vertical-align: middle;
 }
 .market-text{
-    font-family: 'paybooc-Bold';
+    font-family: 'paybooc-Medium';
     font-size: 24px;
     line-height: 30px;
+}
+@media(max-width:1600px){
+    .market-text{
+        font-size: 16px;
+        line-height: 22px;
+    }
 }
 .market-img-wrap img{
     width: 100%;
@@ -791,6 +835,14 @@ table.results-table tr:last-child td{
     z-index: -1;
     transform: translate(-2%,2%);
 }
+@media(max-width:1600px){
+    .video-deco-box{
+        width: 450px;
+        height: 252px;
+        z-index: -1;
+        transform: translate(-2%,2%);
+    }
+}
 .img-wrap{
     position: relative;
     width: 470px;
@@ -860,6 +912,7 @@ transform: translate(-3%,-3%);
     padding: 20px;
     margin-right: 2.5%;
 }
+
 .map-button-wrap a i{
    width: 25%;
     text-align: center;
@@ -871,6 +924,18 @@ transform: translate(-3%,-3%);
     vertical-align: middle;
     margin-bottom: 0 !important;
  
+}
+@media(max-width:1600px){
+    .map-button-wrap a p{
+        font-size: 12px !important;  
+        line-height: 28px;
+    }
+    .map-button-wrap a{
+        padding: 5px;
+    }
+    .map-button-wrap{
+        padding-top: 17%;
+    }
 }
 .naver{
     border: 1px solid #63c15e;
@@ -1016,6 +1081,16 @@ transform: translate(-3%,-3%);
     overflow: hidden;
     clip: rect(0,0,0,0);
     border: 0;
+}
+
+@media(max-width:1600px){
+    .inquiry-contents textarea {
+        width: 670px;
+    }
+
+.inquiry-contents .privacy {
+    width: 670px;
+}
 }
 /* .agree-check input[type="checkbox"] + label:before {
     content: ' ';
