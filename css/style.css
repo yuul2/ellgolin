@@ -291,6 +291,15 @@
     left: 0;
     transform: translate(17%,50%);
 }
+.box-deco-vision-2{
+    position: absolute;
+    width: 102px;
+    height: 6px;
+    background:#c01f25;
+    top: 60%;
+    left: 0;
+    transform: translate(17%,50%);
+}
 
 @media(max-width:1920px){
     .box-deco{
@@ -299,6 +308,9 @@
     .box-deco-vision{
         top: 48%;
     } 
+    .box-deco-vision-2{
+        top: 40%;
+    }
 }
 .overview-wrap{
     justify-content: space-between;
@@ -348,6 +360,7 @@
 
 /* 사업소개 page */
 
+/* 사업소개  */
 .bg-business{
     background-image: url(../images/Produce.jpg);
     background-repeat: no-repeat;
@@ -513,6 +526,15 @@ tr.materials-wrap table thead tr th{
 }
 .meta-description-wrap{
     display: none;
+}
+
+/* 고부가가치 제품 */
+
+.high-life-text{
+    font-size: 24px;
+}
+.high-healty-food-wrap img{
+    width: 100%;
 }
 /* R&D page css */
 
