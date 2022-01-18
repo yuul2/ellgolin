@@ -1,99 +1,85 @@
 /* font-css */
-@font-face {
-    font-family: 'paybooc-Light';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Light.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'paybooc-Medium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Medium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'paybooc-ExtraBold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-ExtraBold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'paybooc-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-/* @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
 
-.notosanskr{ 
- font-family: 'Noto Sans KR', sans-serif;
-} */
 .ft-20{
-    font-family: 'paybooc-Bold';
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
     font-size: 20px;
     color: #333;
 }
 .ft-21{
-    font-family: 'paybooc-Medium';
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
     font-size: 21px;
     color: #333;
 }
 .ft-28{
-    font-family: 'paybooc-Bold';
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
     font-size: 28px;
     color: #c01f25;
 }
 .ft-28-bk{
-    font-family: 'paybooc-Medium';
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
     font-size: 28px;
     color: #333;
 }
 .ft-32{
-    font-family: 'paybooc-Medium';
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
     font-size: 32px;
     color: #333;
 }
 .ft-36{
-    font-family: 'paybooc-Medium';
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
     font-size: 36px;
     color: #333;
 }
 .ft-36-md-bk{
-    font-family: 'paybooc-Medium';
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
     font-size: 36px;
 }
 .ft-36-md-wh{
-    font-family: 'paybooc-Medium';
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
     font-size: 36px;
     color: #fff;
 }
 .ft-11{
-    font-family: 'paybooc-Light';
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
     font-size: 11px;
     color: #333;
 }
 
 .ft-70{
     font-size: 70px;
-    font-family: 'paybooc-Bold';
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
     letter-spacing: -3px;
     line-height: 68px;
 }
 .ft-70-wh{
     font-size: 70px;
-    font-family: 'paybooc-Bold';
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
     letter-spacing: -3px;
     line-height: 68px;
     color: #fff;
 }
 .ft-26{
     font-size: 26px;
-    font-family: 'paybooc-Medium';
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
     line-height: 46px;
 }
 .ft-26-wh{
     font-size: 26px;
-    font-family: 'paybooc-Medium';
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
     line-height: 46px;
     color: #fff;
 }
@@ -127,17 +113,20 @@
     }
 }
 .ft-24{
-    font-family: 'paybooc-Bold';
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
     font-size: 24px;
     padding-bottom: 20px;
     margin: 0 !important;
 }
 .ft-18{
-    font-family: 'paybooc-Medium';
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
     font-size: 18px;
 }
 .ft-18-m{
-    font-family: 'paybooc-Medium';
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
     font-size: 18px;
 }
 @media(max-width:1600px){
