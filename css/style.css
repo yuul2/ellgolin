@@ -112,6 +112,9 @@
 .m_gnb_container{
     display: none;
 }
+.mobile-menu{
+    display: none;
+}
 @media (max-width:1200px){
 	.w_header_box {
     display: none;
@@ -172,10 +175,19 @@
 }
 
 @media (max-width:2560px){
+    .w_header_box{
+        max-width: 1664px;
+    }
+    .top_logo {
+        text-align: left;
+    }
+    .top_logo a img{
+        width:69%;
+    }
 	.navi_box_bg {
 		width:2560px;
-        top: 78px;
-		left:-885px;
+        top: 77px;
+		left:-739px;
 }
 }
 
@@ -328,7 +340,11 @@
     font-size: 18px;
     letter-spacing: 2px;
 }
-
+@media(max-width:2560px){
+    .banner-text{
+        padding-top: 6% !important;
+    }
+}
 
 /* 기업개요 section */
 
@@ -436,6 +452,14 @@
 }
 .medicine-txt{
     font-size: 24px;
+}
+@media(max-width:2560px){
+    .bg-business .banner-text{
+        padding-top: 5.2% !important;
+    }
+    .box-deco-vision-2 {
+        top: 50%;
+    }
 }
 @media(max-width:1600px){
     .medicine-txt{
@@ -955,6 +979,13 @@ transform: translate(-3%,-3%);
     padding:14% 0 !important;
     text-align: center !important;
 }
+
+@media(max-width:2560px){
+    .address-wrap{
+        padding-top: 7% !important;
+    }
+}
+
 .address-wrap h1{
     color: #000;
 }
