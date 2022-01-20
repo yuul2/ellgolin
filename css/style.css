@@ -199,7 +199,7 @@
     color: #333;
 }
 .privacy-wrap ul li:first-child{
-    width: 11%;
+    width: 8.7%;
 }
 .privacy-wrap ul li:nth-child(2){
     width: 1.1%;
@@ -207,6 +207,15 @@
 .footer-info-wrap ul li{
     line-height: 26px;
     color: #333;
+}
+
+.brand-logo img{
+    width: 15%;
+}
+@media(max-width:1920px){
+    .privacy-wrap ul li:first-child{
+        width: 11.5%;
+    }
 }
 @media(max-width:1600px){
     .privacy-wrap ul li:first-child{
@@ -424,6 +433,9 @@
 }
 
 /* 회사연혁page-css */
+.history-top-pad{
+    padding-top: 3%;
+}
 .history-img-wrap img{
     width: 100%;
 }
@@ -985,6 +997,11 @@ transform: translate(-3%,-3%);
         padding-top: 7% !important;
     }
 }
+@media (max-width: 1920px){
+    .address-wrap {
+        padding-top: 9.5% !important;
+    }
+}
 
 .address-wrap h1{
     color: #000;
@@ -1172,7 +1189,15 @@ transform: translate(-3%,-3%);
 .inquiry-contents .agree-check {
     margin: 20px 0 40px;
 }
-.agree-check input[type="checkbox"] {
+.agree-check input[type="checkbox"]{
+    margin-right: 5px;
+    
+}
+.agree-check input[type="checkbox"]:focus{
+    outline: none;
+    
+}
+/* .agree-check input[type="checkbox"] {
     position: absolute;
     position: absolute;
     width: 1px;
@@ -1182,7 +1207,7 @@ transform: translate(-3%,-3%);
     overflow: hidden;
     clip: rect(0,0,0,0);
     border: 0;
-}
+} */
 
 @media(max-width:1600px){
     .inquiry-contents textarea {
@@ -1193,20 +1218,7 @@ transform: translate(-3%,-3%);
     width: 670px;
 }
 }
-/* .agree-check input[type="checkbox"] + label:before {
-    content: ' ';
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
-    margin: -2px 8px 0 0;
-    text-align: center;
-    vertical-align: middle;
-    background: #fff;
-    border: 1px solid #666;
-    border-radius: 3px;
-    box-sizing: border-box;
-} */
+
 .commbtn{
     width : 200px;
     display : inline-block;
