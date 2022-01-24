@@ -897,6 +897,11 @@ table.results-table tr:last-child td{
     border-bottom: 2px solid #333;
 }
 
+@media(max-width:2560px){
+    .results-table{
+        width: 100%;
+    }
+}
 
 /* 홍보관 - 소식과행사 page css  */
 
