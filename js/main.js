@@ -25,7 +25,12 @@ $(function(){
             $('.daily-all-wrap').css('display','block');
             $('.high-food-all-wrap').css('display','none');
         });
-
+        $('.add-made-btn').on('click',function(){
+            $('.made-noodle-wrap').css('display','block');
+        });
+        $('.xi-close').on('click',function(){
+            $('.made-noodle-wrap').css('display','none')
+        })
         // 비즈니스 page tab-menu 
         $('.add-content').on('click',function(){
             $('.s-medi-description').stop().slideDown(300);

@@ -441,10 +441,32 @@
 }
 
 /* 협력사소개 page-css */
-.infra-img-wrap img{
-    width: 100%;
-}
 
+.partners-logo img{
+    width: 30%;
+}
+.partners-tit{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 50px;
+    word-break: keep-all;
+    border-left: 2px solid #888;
+}
+.partners-tit td{
+    padding-left: 30px;
+}
+.partners-description{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 32px;
+    word-break: keep-all;
+    border-left: 2px solid #888;
+}
+.partners-description td{
+    padding-left: 30px;
+}
 
 /* 사업소개 page */
 
@@ -536,7 +558,25 @@ table.medi-table tr td{
     line-height: 40px;
     vertical-align: middle;
 }
+.add-content-wrap2 a{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    vertical-align: middle;
+}
+.download-wrap a{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    vertical-align: middle;
+}
 .add-content-wrap a i{
+    vertical-align: middle;
+    font-weight: 700;
+}
+.add-content-wrap2 a i{
     vertical-align: middle;
     font-weight: 700;
 }
@@ -547,15 +587,33 @@ table.medi-table tr td{
     line-height: 40px;
     vertical-align: middle;
 }
+.closed-content-wrap2 a{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    vertical-align: middle;
+}
 .closed-content-wrap a i{
+    vertical-align: middle;
+    font-weight: 700;
+}
+.closed-content-wrap2 a i{
     vertical-align: middle;
     font-weight: 700;
 }
 .add-content-wrap{
     padding-top: 3%;
+    width: 50%;
+}
+.download-wrap{
+    width: 50%;
+    padding-top: 3%;
 }
 .closed-content-wrap{
     display: none;
+    width: 50%;
+    padding-top: 3%;
 }
 .add-content-wrap2 a{
     font-family: 'Noto Sans KR', sans-serif;
@@ -691,6 +749,59 @@ tr.materials-wrap table thead tr th{
 table.high-food-table{
     margin-top: 6%;
 }
+.haccp-wrap img{
+width: 15%;
+padding-top: 10px;
+}
+.haccp-description-wrap{
+    padding-top: 10px;
+}
+.haccp-description-wrap h4{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #c01f25;
+}
+.haccp-description-wrap p{
+    word-break: keep-all;
+}
+.made-noodle-wrap{
+    position: relative;
+    display: none;
+}
+.made-noodle-wrap img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    transform: translate(8%,80%);
+    box-shadow: 10px 10px 5px #e6e6e6;
+}
+.xi-close{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(1530%,-405%);
+    font-size: 32px;
+    z-index: 4;
+    cursor: pointer;
+}
+.add-made-wrap{
+    padding-top: 20px;
+}
+.add-made-btn{
+    width: 300px;
+    height: 60px;
+    border-radius: 30px;
+    border: 2px solid #888;
+    background: #f8f9fa;
+    font-size: 21px;
+    letter-spacing: 2px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.add-made-btn:focus{
+    outline: none;
+}
 table.high-food-table tr{
     border-top: 2px solid #333;
     border-bottom: 2px solid #e1e1e1;
@@ -778,7 +889,54 @@ table.high-food-table tr td{
 .facility-content-wrap img{
     width: 100%;
 }
+.img-row-wrap{
+    width: 50%;
+}
+.img-row-wrap img{
+    width: 100%;
+}
+.img-half-wrap{
+    width: 50%;
+}
+.img-half-wrap img{
+    width: 100%;
+}
 /* 시설소개 page end */
+.factory-wrap{
+    width: 100%;
+    position: relative;
+}
+.factory-img{
+    position: relative;
+}
+.factory-wrap img{
+    width: 100%;
+}
+.factory-area-wrap{
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    transform: translate(570px, -260px);
+}
+.factory-area-wrap h2{
+    font-size: 32px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    line-height: 48px;
+}
+.factory-area-wrap p{
+    font-size: 21px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    line-height: 48px;
+}
+.haccp-img-wrap{
+    width: 8%;
+    position: absolute;
+    right: 0;
+    bottom: 45px;
+    transform: translate(-50%,0);
+}
 
 /* 연구분야 page css */
 .bg-reserch-field{
@@ -873,7 +1031,7 @@ table.results-table tr th{
     vertical-align: middle;
     font-size: 20px;
     font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 36px;
     height: 80px;
     padding:20px;
@@ -919,7 +1077,43 @@ table.results-table tr:last-child td{
 .bg-information .banner-text p{
     color: #000;
 }
+.article-title-wrap h2{
+    line-height: 38px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.article-title-wrap p{
+    line-height: 40px;
+    padding-left: 1050px;
+}
 
+
+.article-decription{
+    border-bottom: 2px solid #333;
+}
+
+.article-title-wrap{
+    padding-bottom: 10px;
+    border-bottom: 2px solid #333;
+}
+.newlist-btn-wrap{
+    margin-right: 116px;
+}
+.newlist-btn{
+    border-radius: 30px;
+    border: 1px solid #333;
+    background: none;
+    padding: 20px 74px;
+}
+.newlist-btn:focus{
+    outline: none;
+}
+.article-img-wrap-k{
+    width: 100%;
+}
+.article-title-wrap-k img{
+width: 33.33%;
+}
 /* 홍보관 - pr센터 page css  */
 .video-wrap video{
     width: 100%;
