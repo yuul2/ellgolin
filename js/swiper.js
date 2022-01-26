@@ -64,15 +64,15 @@ $(document).ready(function(){
 	});
 
 	
-	$('.btn_arrow a').on('keyup', function(e){
-		var keyCode = e.keyCode || e.which;
-		var dataIndex = $(this).data('index');
-		if(keyCode == 9 && !e.shiftKey){
-			mainSwiper.slideTo(dataIndex);
-		}else if(keyCode == 9 && e.shiftKey){
-			mainSwiper.slideTo(dataIndex-1);
-		}
-	});
+	// $('.btn_arrow a').on('keyup', function(e){
+	// 	var keyCode = e.keyCode || e.which;
+	// 	var dataIndex = $(this).data('index');
+	// 	if(keyCode == 9 && !e.shiftKey){
+	// 		mainSwiper.slideTo(dataIndex);
+	// 	}else if(keyCode == 9 && e.shiftKey){
+	// 		mainSwiper.slideTo(dataIndex-1);
+	// 	}
+	// });
 
 	$('.swiper-slide:eq(0)').on('focus', function(e){
 		mainSwiper.slideTo(0);
