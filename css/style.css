@@ -122,6 +122,52 @@
 .m_logo_wrap img{
     width: 18%;
 }
+#aside.open{
+    display: block;
+    right:0;
+}
+#aside{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    z-index: 3002;
+    transition: all 0.5s;
+    background: #fff;
+}
+#aside .aside-top{
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 30px;
+    border-bottom: 1px solid #eee;
+}
+#aside .aside-top .logo {
+    height: 65px !important;
+}
+#aside .aside-top .logo {
+    display: block;
+    width: 272px;
+    height: 48px;
+    background: url(../images/logoB.png) no-repeat 0 0;
+    background-size: 78%;
+    font-size: 0;
+}
+#aside .aside-top i.xi-close{
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.aside-body{    
+    height: 378px;
+}
+#aside .aside-body {
+    overflow: hidden;
+    overflow-y: auto;
+}
+.m-sub-menu{
+    flex-direction: column !important;
+}
 .m_gnb_container .m-icon-wrap{
     font-size: 38px;
     color: #333;
@@ -134,7 +180,7 @@
     
 }
 .m-sub-menu{
-    display: none;
+    display: block;
 }
 .mobile-menu li a{
     font-size: 18px;
@@ -736,7 +782,7 @@ padding-top: 10px;
     transform: translate(8%,80%);
     box-shadow: 10px 10px 5px #e6e6e6;
 }
-.xi-close{
+.made-noodle-wrap .xi-close{
     position: absolute;
     top: 50%;
     right: 50%;
