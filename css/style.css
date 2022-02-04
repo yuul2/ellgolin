@@ -159,7 +159,8 @@
     cursor: pointer;
 }
 .aside-body{    
-    height: 378px;
+    width: 100%;
+    height: 100vh;
 }
 #aside .aside-body {
     overflow: hidden;
@@ -172,15 +173,19 @@
     font-size: 38px;
     color: #333;
 }
-.m_menu_wrap{
-    height: 100vh;
-    padding-top: 90px;
-    padding-right: 110px;
-    border-bottom: 1px solid rgb(204, 204, 204);
-    
+.menu-head{
+    padding: 55px 50px;
+}
+li.menu-head ul.m-sub-menu li a{
+    font-size: 24px;
+    font-weight: 300;
 }
 .m-sub-menu{
-    display: block;
+    display: none;
+}
+.m-sub-menu li{
+    border-bottom:1px solid #e3e3e3;
+    padding: 0 !important;
 }
 .mobile-menu li a{
     font-size: 18px;
@@ -193,8 +198,35 @@
 .mobile-menu li{
     padding-left: 160px;
 }
-.xi-plus{
-    padding-left: 240px;
+.add-sub-menu{
+    width: 90%;
+    display: block;
+    font-size: 24px;
+}
+.add-menu{
+    width: 92%;
+    display: block;
+    font-size: 24px;
+}
+.remove-menu{
+    width: 90%;
+    font-size: 24px;
+    display: none !important;
+}
+.remove-menu-3{
+    width: 90%;
+    font-size: 24px;
+    display: none !important;
+}
+.mobile_gnb li.menu-head a{
+    width: 50%;
+    font-size: 24px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    line-height: 60px;
+}
+.mobile_gnb li.menu-head{
+    border-bottom: 1px solid #e3e3e3;
 }
 /* nav-END */
 
