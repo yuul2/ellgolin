@@ -12,6 +12,69 @@ $(function(){
             
         // 네비게이션 end
         
+        // 모바일 네비게이션 
+        $(function(){
+            $('.add-sub-menu').on('click',function(){
+                $('.m-sub-menu').stop().slideDown(300);
+                $('.add-sub-menu').css('display','none');
+                $('.remove-menu').attr('style','display : block !important');
+                $('.on-first').addClass('on');
+            });
+            $('.remove-menu').on('click',function(){
+                $('.m-sub-menu').stop().slideUp(300);
+                $('.remove-menu').css('display','none');
+                $('.add-sub-menu').css('display','block');
+                $('.on-first').removeClass('on');
+            });
+            // 회사소개 end
+            $('.add-sub-menu2').on('click',function(){
+                $('.m-sub-menu2').stop().slideDown(300);
+                $('.add-sub-menu2').css('display','none');
+                $('.remove-menu-2').attr('style','display : block !important');
+                $('.on-sec').addClass('on');
+            });
+            $('.remove-menu-2').on('click',function(){
+                $('.m-sub-menu2').stop().slideUp(300);
+                $('.remove-menu-2').css('display','none');
+                $('.add-sub-menu2').css('display','block');
+                $('.on-sec').removeClass('on');
+            });
+            // 제품소개 end 
+            $('.add-sub-menu3').on('click',function(){
+                $('.m-sub-menu3').stop().slideDown(300);
+                $('.add-sub-menu3').css('display','none');
+                $('.remove-menu-3').attr('style','display : block !important');
+                $('.on-3rd').addClass('on');
+            });
+            $('.remove-menu-3').on('click',function(){
+                $('.m-sub-menu3').stop().slideUp(300);
+                $('.remove-menu-3').css('display','none');
+                $('.add-sub-menu3').css('display','block');
+                $('.on-3rd').removeClass('on');
+            });
+            // 홍보관 end 
+            $('.add-sub-menu4').on('click',function(){
+                $('.m-sub-menu4').stop().slideDown(300);
+                $('.add-sub-menu4').css('display','none');
+                $('.remove-menu-4').attr('style','display : block !important');
+                $('.on-4rd').addClass('on');
+            });
+            $('.remove-menu-4').on('click',function(){
+                $('.m-sub-menu4').stop().slideUp(300);
+                $('.remove-menu-4').css('display','none');
+                $('.add-sub-menu4').css('display','block');
+                $('.on-4rd').removeClass('on');
+            });
+            // 고객문의 end 
+
+            $('.xi-bars').click(function(){
+                $(".open").toggle("slide");
+            });
+            $('.closing').click(function(){
+                $(".open").toggle("slide");
+            });
+            
+        })
         // 고부가가치 page tab-menu
         $('.food').on('click',function(){
             $('ul.high-tab > li:first-child').addClass('active2');

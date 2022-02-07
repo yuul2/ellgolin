@@ -109,6 +109,7 @@
 .section-mobile{
     background: #fff;
     border-bottom: 1px solid rgb(204, 204, 204);
+    padding: 28px;
 }
 .m_gnb_container{
     width: 1000px;
@@ -117,13 +118,15 @@
 }
 .m_logo_wrap{
     margin-top: 7px;
-    padding-left: 6%;
 }
 .m_logo_wrap img{
-    width: 18%;
+    width: 22%;
+}
+.m-icon-wrap i{
+    padding: 20px 0;
 }
 #aside.open{
-    display: block;
+    display: none;
     right:0;
 }
 #aside{
@@ -166,67 +169,75 @@
     overflow: hidden;
     overflow-y: auto;
 }
-.m-sub-menu{
+.m-sub-menu,.m-sub-menu2,.m-sub-menu3,.m-sub-menu4{
     flex-direction: column !important;
+    background: #f5f5f5;
 }
 .m_gnb_container .m-icon-wrap{
     font-size: 38px;
     color: #333;
 }
-.menu-head{
+.menu-head a{
     padding: 55px 50px;
 }
 li.menu-head ul.m-sub-menu li a{
     font-size: 24px;
     font-weight: 300;
 }
-.m-sub-menu{
+.m-sub-menu, .m-sub-menu2, .m-sub-menu3, .m-sub-menu4{
     display: none;
 }
 .m-sub-menu li{
     border-bottom:1px solid #e3e3e3;
-    padding: 0 !important;
+    padding: 20px 0;
 }
-.mobile-menu li a{
-    font-size: 18px;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 500;
-    letter-spacing: 3px;
-    line-height: 60px;
-   
+.m-sub-menu2 li{
+    border-bottom:1px solid #e3e3e3;
+    padding: 20px 0;
 }
-.mobile-menu li{
-    padding-left: 160px;
+.m-sub-menu3 li{
+    border-bottom:1px solid #e3e3e3;
+    padding: 20px 0;
 }
-.add-sub-menu{
-    width: 90%;
+.m-sub-menu4 li{
+    border-bottom:1px solid #e3e3e3;
+    padding: 20px 0;
+}
+
+.add-sub-menu,.add-sub-menu2,.add-sub-menu4{
     display: block;
     font-size: 24px;
+    padding: 18px 0;
 }
-.add-menu{
-    width: 92%;
+.add-sub-menu3{
     display: block;
     font-size: 24px;
+    padding: 18px 0;
 }
-.remove-menu{
-    width: 90%;
+.remove-menu,.remove-menu-2,.remove-menu-4{
     font-size: 24px;
     display: none !important;
+    padding: 18px 0;
 }
 .remove-menu-3{
-    width: 90%;
     font-size: 24px;
     display: none !important;
+    padding: 18px 0;
 }
 .mobile_gnb li.menu-head a{
-    width: 50%;
+    width: 100%;
     font-size: 24px;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 500;
     line-height: 60px;
+    justify-content: space-between;
 }
 .mobile_gnb li.menu-head{
     border-bottom: 1px solid #e3e3e3;
+}
+
+.on{
+    color: #2254a5 !important;
 }
 /* nav-END */
 
