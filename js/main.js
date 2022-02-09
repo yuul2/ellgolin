@@ -67,11 +67,17 @@ $(function(){
             });
             // 고객문의 end 
 
-            $('.xi-bars').click(function(){
-                $(".open").toggle("slide");
+            $('.m-icon-wrap i').click(function(){
+                $(".open").css({
+                    'display' : 'block'
+                });
+                $(".open").css({
+                    'right' : '-100%'
+                });
+                $(".open").animate({right:"0px"},"linear");
             });
             $('.closing').click(function(){
-                $(".open").toggle("slide");
+                $(".open").animate({right:"-100%"},"linear");
             });
             
         })

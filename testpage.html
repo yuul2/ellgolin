@@ -136,19 +136,10 @@
             </div>
         </aside>
        
-          
+        <!-- mobile-header-menu END -->   
            
         <!-- swiper container -->
     
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide swiper-img"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-            </div>
-        </div>
 
 
 
@@ -195,6 +186,13 @@
             <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
             <script>
                 AOS.init();
+
+                var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
               </script>
         </body>
     </html>
