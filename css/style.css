@@ -244,6 +244,9 @@ li.menu-head ul.m-sub-menu li a{
 /* nav-END */
 
 /* footer-css */
+.m-footer-wrap{
+    display: none;
+}
 .privacy-wrap ul li{
     line-height: 26px;
     color: #333;
@@ -435,6 +438,9 @@ li.menu-head ul.m-sub-menu li a{
     .box-deco-vision{
         top: 42%;
     } 
+}
+.mobile-overview-wrap{
+    display: none;
 }
 .overview-wrap{
     justify-content: space-between;

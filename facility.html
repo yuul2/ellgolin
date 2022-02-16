@@ -10,17 +10,20 @@
         <link rel="icon" href="/images/favicon-logo.ico">
         <link rel="stylesheet" href="/css/style.css">
         <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
         <script src="/js/bootstrap.min.js"></script>
         <script src="/js/jquery-3.3.1.min.js"></script>
         <script src="/js/jquery.sticky.js"></script>
 
     </head>
     <body>
+           <!-- 전체 메뉴  -->
+        <!-- 상단메뉴 desck-top ver.  -->
         <header class="header-container fixed-top">
-            <div class="w_header_box"> 
+            <div class="w_header_box">
                 <div class="top_logo">
                     <a href="/index.html">
-                        <img src="/images/logo(B).png" alt="엘골인로고"></a>
+                        <img src="/images/logoB.png" alt="엘골인로고"></a>
                 </div>
                 <div class="navi_box">
                     <div class="navi_box_bg"></div>
@@ -77,54 +80,58 @@
                     </ul>
                 </div>
             </div>
-            <div class="m_gnb_container">
+        </header>
+           <!-- 상단메뉴 mobile ver.  -->
+        <section class="section-mobile fixed-top">
+            <div class="m_gnb_container d-flex">
                 <div class="m_logo_wrap text-left">
-                    <img src="images/logo(B).png" alt="m-logo" href="index.html">
+                    <img src="images/logoB.png" alt="m-logo" href="index.html">
                 </div> 
                 <div class="m-icon-wrap text-center">
-                    <i class="xi-bars"></i>
+                  <i class="xi-bars"></i>
+                </div>
+                </div>
+        </section>
+        <aside id="aside" class="open">
+            <div class="aside-head">
+                <div class="aside-top d-flex">
+                    <div class="logo"></div>
+                    <i class="xi-close closing"></i>
                 </div>
             </div>
-            <div class="m_menu_wrap text-right">
-                
-                <ul class="mobile-menu">
-                    <li>
-                        <a href="ceo.html">회사소개</a>
-                        <ul>
+            <div class="aside-body">
+                <ul class="mobile_gnb">
+                    <li class="menu-head"><a href="#" class="d-flex on-first">회사소개 <i class="xi-plus add-sub-menu"></i><i class="xi-minus remove-menu "></i></a> 
+                        <ul class="m-sub-menu">
                             <li><a href="ceo.html">CEO인사말</a></li>
                             <li><a href="vision.html">이념과비전</a></li>
                             <li><a href="history.html">회사연혁</a></li>
-                            <li>  <a href="infra.html">가족사소개</a></li>
+                            <li><a href="infra.html">가족사소개</a></li>
+                            <li><a href="adress.html">오시는길</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="business.html">제품소개</a>
-                        <ul>
-                            <li><a href="business.html">의약품</a></li>
-                            <li><a href="healthy.html">Healthy life style</a></li>
+                    <li class="menu-head"><a href="#" class="d-flex on-sec">제품소개 <i class="xi-plus add-sub-menu2 text-right"></i><i class="xi-minus remove-menu-2 text-right"></i></a> 
+                        <ul class="m-sub-menu2">
+                           <li><a href="business.html">의약품</a></li> 
+                            <li><a href="healthy.html">식품및생활용품</a></li>
                             <li><a href="localfood.html">로컬푸드</a></li>
-                            <!-- <li><a href="marketing.html">영업/마케팅인프라</a></li> -->
                         </ul>
                     </li>
-                    <li>
-                        <a href="notice.html">홍보관</a>
-                        <ul>
+                    <li class="menu-head"><a href="#" class="d-flex on-3rd">홍보관 <i class="xi-plus add-sub-menu3 text-right"></i><i class="xi-minus remove-menu-3 text-right"></i></a> 
+                        <ul class="m-sub-menu3">
+                            <li><a href="">공지사항</a></li>
                             <li><a href="notice.html">소식및행사</a></li>
-                            <li><a href="prcenter.html">PR센터</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="adress.html" class="menu-title">
-                            고객문의</a>
-                            <ul>
-                                <li><a href="adress.html">오시는길</a></li>
-                                <li><a href="contact.html">1:1문의</a></li>
-                            </ul>
+                    <li class="menu-head"><a href="#" class="d-flex on-4rd">고객문의 <i class="xi-plus add-sub-menu4 text-right"></i><i class="xi-minus remove-menu-4 text-right"></i></a> 
+                        <ul class="m-sub-menu4">
+                           <li><a href="contact.html">1:1문의</a></li>
+                        </ul>
                     </li>
-                    
                 </ul>
             </div>
-        </header>
+        </aside>
+         <!-- 전체 메뉴 End  -->
         <div class="container-fluid bg-circle pb-140">
             <div class="row">
                 <div class="col-12 bg-facility">

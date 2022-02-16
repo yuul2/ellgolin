@@ -1,143 +1,417 @@
 
-/* @media (max-width:1046px){
-	.navi_box_bg {
-    top: 75px;
-}
-} */
 
-@media (max-width:2560px){
-    .w_header_box{
+@media (max-width:2560px) {
+    .w_header_box {
         max-width: 1664px;
     }
     .top_logo {
         text-align: left;
     }
-    .top_logo a img{
-        width:69%;
+    .top_logo a img {
+        width: 69%;
     }
-	.navi_box > .navi_box_bg{
-		width:2560px !important;
-        top: 84px ;
-		left:-864px;
-}
-.banner-text{
-    padding-top: 6% !important;
-}
+    .navi_box > .navi_box_bg {
+        width: 2560px !important;
+        top: 84px;
+        left: -864px;
+    }
+    .banner-text {
+        padding-top: 6% !important;
+    }
 }
 
-@media (max-width:1920px){
+@media (max-width:1920px) {
     .navi_box_bg {
         top: 83px;
         left: -544px;
     }
-    .banner-text{
+    .banner-text {
         padding-top: 8.4% !important;
     }
 }
-@media(max-width:1600px){
-    .navi_box_bg{
-        top:69px;
+@media(max-width:1600px) {
+    .navi_box_bg {
+        top: 69px;
     }
-    .w_header_box{
+    .w_header_box {
         max-width: 1400px;
     }
-    .menu:hover > a > span{
+    .menu:hover > a > span {
         padding-bottom: 11px;
     }
-    .menu a.menu-title span:hover{
+    .menu a.menu-title span:hover {
         padding-bottom: 11px;
     }
     .menu .submenu_box {
-       padding-top: 12px !important;
+        padding-top: 12px !important;
     }
 
     /* 메뉴 end css  */
     /* 연혁페이지  */
-    .banner-text{
+    .banner-text {
         padding-top: 10.5% !important;
         text-align: center;
     }
 }
 
-
 /* mobile */
-@media(max-width:1201px){
-    .header-container{
+@media(max-width:1201px) {
+    .header-container {
         display: block;
     }
-    .section-mobile{
+    .section-mobile {
         display: none;
     }
-    #aside{
+    #aside {
         display: none;
     }
 }
 
-@media (max-width:1200px){
-	.header-container{
-    display: none;
-}
+@media (max-width:1200px) {
+    .header-container {
+        display: none;
+    }
 
-/* 모바일메뉴 */
-section.section-mobile{
-    display: block;
-}
-/* 모바일 상위메뉴 */
-/* 이념 page  */
-.bg-vision {
-    height: 500px;
-}
-.banner-text{
-    padding-top: 17.5% !important;
-}
+    /* 모바일메뉴 */
+    section.section-mobile {
+        display: block;
+    }
+    /* 모바일 상위메뉴 */
+    /* 이념 page  */
+    .bg-vision {
+        height: 500px;
+    }
+    .banner-text {
+        padding-top: 17.5% !important;
+    }
 
 }
-@media (max-width:1024px){
-    .m_gnb_container{
+@media (max-width:1024px) {
+    .m_gnb_container {
         width: 950px !important;
     }
     .bg-circle {
         background-size: 100% !important;
     }
-    .page-title-text{
+    .page-title-text {
         font-size: 40px !important;
     }
-}
 
-@media(max-width:820px){
-    .m_gnb_container{
+    .elgoalin-ceo {
+        font-size: 26px !important;
+    }
+}
+@media(max-width:912px) {
+    .m_gnb_container {
         width: 760px !important;
     }
+    /* 모바일 메뉴 end */
     .bg-circle {
         background-size: 100% !important;
     }
-    .page-title-text{
+    .page-title-text {
         font-size: 30px !important;
     }
-    .m_logo_wrap img{
+    .m_logo_wrap img {
         width: 27% !important;
     }
-    .banner-text{
-        padding-top: 23.5% !important;
+    .banner-text {
+        padding-top: 21.5% !important;
     }
-    .box-deco-vision{
+    .box-deco-vision {
         width: 79px !important;
         height: 4px !important;
     }
-    .overview-title,.mission-title,.vision-t,.corevalue-title{
+    .m-corevalue-title,
+    .mission-title,
+    .overview-title,
+    .vision-t {
         font-size: 24px !important;
     }
-    .overview-content,.mission-content,.vision-content,.corevalue-content{
+    .m-corevalue-content,
+    .mission-content,
+    .overview-content,
+    .vision-content {
         font-size: 22px;
     }
-    
-.corevalue-content-wrap h3{
-    font-size: 22px !important;
+
+    .m-corevalue-content-wrap h3 {
+        font-size: 22px !important;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 700;
+        color: #333;
+    }
+    .m-corevalue-content-wrap p {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 500;
+        color: #333;
+    }
+    .privacy-wrap ul li:first-child {
+        width: 25% !important;
+    }
+    .brand-logo img {
+        width: 28% !important;
+    }
+    #m-none {
+        display: none !important;
+    }
+    .m-corevalue-title {
+        padding-top: 50px;
+    }
+    .m-creative-wrap img {
+        width: 50%;
+    }
+    .m-faith-wrap img {
+        width: 50%;
+    }
+    .m-balance-wrap img {
+        width: 50%;
+    }
+    .m-balance-wrap,
+    .m-creative-wrap,
+    .m-faith-wrap {
+        padding-top: 50px;
+    }
+}
+@media(max-width:820px) {
+    .banner-text {
+        padding-top: 23.5% !important;
+    }
+    /* 협력사 page  */
+
+    .partners-logo img {
+    width: 50% !important;
+    }
+    .partners-logo-2 img{
+        width: 30%;
+    }
+    /* 협력사 page end  */
+}
+@media(max-width:768px) {
+    .m_gnb_container {
+        width: 700px !important;
+    }
+    /* 모바일 메뉴 end */
+}
+
+@media (max-width:540px) {
+    .m_gnb_container {
+        width: 490px !important;
+    }
+    .m_logo_wrap img {
+        width: 38% !important;
+    }
+    /* 모바일 메뉴 end */
+    .banner-text {
+        padding-top: 32.5% !important;
+    }
+    .banner-text-title {
+        font-size: 40px;
+    }
+    .banner-explain {
+        word-break: keep-all;
+    }
+    /* banner end  */
+    /* ceo page  */
+    .ceo-text{
+        text-align: center !important;
+        padding-top: 80px !important;
+    }
+    .box-deco {
+        height: 5px !important;
+        width: 100px !important;
+        top: 48% !important;
+        transform: translate(130%,60%) !important;
+    }
+    /* ceo page end  */
+    /* 협력사 page */
+    .partners-logo img {
+        width: 70% !important;
+        }
+        .partners-logo-2 img{
+            width: 40%;
+        }
+    /* 회사연혁 page end */
+    .page-title-wrap{
+        padding: 80px 100px;
+    }
+    .overview-wrap {
+        flex-direction: column;
+        text-align: center !important;
+    }
+    .page-title-text {
+        text-align: center;
+    }
+    .box-deco-vision {
+        transform: translate(179%,50%) !important;
+        top: 36% !important;
+    }
+    .overview-title, .mission-title, .vision-t, .m-corevalue-title {
+        width: 100% !important;
+        line-height: 80px;
+    }
+    .overview-content, .mission-content, .vision-content, .m-corevalue-content {
+        width: 100% !important;
+    }
+    .m-corevalue-title {
+        text-align: center;
+    }
+    /* footer  */
+    .mo-pd{
+        padding: 0 16px;
+    }
+}
+@media(max-width:414px){
+    .m_gnb_container {
+        width: 360px !important;
+    }
+    .m_logo_wrap img {
+        width: 48% !important;
+    }
+    .m_logo_wrap {
+        margin-top: 12px !important;
+    }
+    .page-title-text {
+        font-size: 28px !important;
+    }
+    .page-title-wrap{
+        padding: 80px 100px 0;
+    }
+    /* ceo page  */
+    .box-deco {
+        top: 49% !important;
+        transform: translate(89%,60%) !important;
+    }
+    /* ceo page end  */
+    /* banner  */
+    .banner-text {
+        padding-top: 44.5% !important;
+    }
+    .banner-text-title {
+        font-size: 36px !important;
+    }
+    .banner-explain {
+        font-size: 16px;
+    }
+    .box-deco-vision {
+        transform: translate(122%,50%) !important;
+        top: 58% !important;
+    }
+    .m-corevalue-content, .mission-content, .overview-content, .vision-content {
+        font-size: 18px;
+    }
+    .m-creative-wrap img {
+        width: 90%;
+    }
+    .m-faith-wrap img {
+        width: 90%;
+    }
+    .m-balance-wrap img {
+        width: 90%;
+    }
+    .privacy-wrap ul li:first-child {
+        width: 32% !important;
+    }
+    .brand-logo img {
+        width: 48% !important;
+    }
+
+    /* 회사연혁 page */
+    .history-top-pad {
+        padding-top: 5% !important;
+    }
+}
+
+@media(max-width:412px){
+    .box-deco-vision {
+        transform: translate(122%,50%) !important;
+        top: 58% !important;
+    }
+}
+@media (max-width: 390px){
+.m_gnb_container {
+    width: 340px !important;
+}
+.m_logo_wrap img {
+    width: 54% !important;
+}
+/* ceo page */
+.box-deco {
+    top: 70% !important;
+    transform: translate(80%,60%) !important;
+}
+.ceo-photo img{
+    width: 60%;
+}
+.ceo-main-tell{
+    font-size: 24px !important;
+}
+.ceo-message{
+    font-size: 18px !important;
+}
+/* ceo page end */
+.banner-text {
+    padding-top: 46.5% !important;
+}
+
+.page-title-wrap {
+    padding: 80px 10px 0 !important;
+}
+.box-deco-vision {
+    transform: translate(114%,50%) !important;
+    top: 48% !important;
 }
 .privacy-wrap ul li:first-child {
-    width: 25% !important;
+    width: 35% !important;
 }
-.brand-logo img {
-    width: 28% !important;
+.privacy-wrap ul li:nth-child(2) {
+    width: 2.1% !important; 
 }
+}
+@media(max-width:375px){
+    .m_gnb_container {
+        width: 328px !important;
+    }
+
+    /* ceo page  */
+    .box-deco {
+        transform: translate(72%,60%) !important;
+    }
+    /* ceo page end  */
+    .banner-text {
+        padding-top: 50.5% !important;
+    }
+    .box-deco-vision {
+        transform: translate(106%,50%) !important;
+        top: 54% !important;
+    }
+    .privacy-wrap ul li:first-child {
+        width: 29% !important;
+        font-size: 12px;
+    }
+    .privacy-wrap ul li{
+        font-size: 12px;
+    }
+    .footer-info-wrap ul li{
+        font-size: 12px;
+    }
+    .m-footer-wrap{
+        display: block !important;
+    }
+    .footer-wrap{
+        display: none;
+    }
+}
+@media(max-width:360px){
+    .m_gnb_container {
+        width: 308px !important;
+    }
+    .banner-text {
+        padding-top: 52.5% !important;
+    }
+    .box-deco-vision {
+        transform: translate(103%,50%) !important;
+        top: 52% !important;
+    }
+    
 }
