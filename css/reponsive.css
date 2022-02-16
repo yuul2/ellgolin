@@ -15,11 +15,24 @@
     .top_logo a img{
         width:69%;
     }
-	.navi_box_bg {
-		width:2560px;
-        top: 77px;
-		left:-739px;
+	.navi_box > .navi_box_bg{
+		width:2560px !important;
+        top: 84px ;
+		left:-864px;
 }
+.banner-text{
+    padding-top: 6% !important;
+}
+}
+
+@media (max-width:1920px){
+    .navi_box_bg {
+        top: 83px;
+        left: -544px;
+    }
+    .banner-text{
+        padding-top: 8.4% !important;
+    }
 }
 @media(max-width:1600px){
     .navi_box_bg{
@@ -37,28 +50,94 @@
     .menu .submenu_box {
        padding-top: 12px !important;
     }
-}
 
+    /* 메뉴 end css  */
+    /* 연혁페이지  */
+    .banner-text{
+        padding-top: 10.5% !important;
+        text-align: center;
+    }
+}
 
 
 /* mobile */
 @media(max-width:1201px){
-    header{
+    .header-container{
         display: block;
     }
-    .m_gnb_container{
+    .section-mobile{
+        display: none;
+    }
+    #aside{
         display: none;
     }
 }
 
 @media (max-width:1200px){
 	.header-container{
-    display: none ;
+    display: none;
 }
+
 /* 모바일메뉴 */
-
+section.section-mobile{
+    display: block;
+}
 /* 모바일 상위메뉴 */
+/* 이념 page  */
+.bg-vision {
+    height: 500px;
+}
+.banner-text{
+    padding-top: 17.5% !important;
+}
 
+}
+@media (max-width:1024px){
+    .m_gnb_container{
+        width: 950px !important;
+    }
+    .bg-circle {
+        background-size: 100% !important;
+    }
+    .page-title-text{
+        font-size: 40px !important;
+    }
+}
 
-
+@media(max-width:820px){
+    .m_gnb_container{
+        width: 760px !important;
+    }
+    .bg-circle {
+        background-size: 100% !important;
+    }
+    .page-title-text{
+        font-size: 30px !important;
+    }
+    .m_logo_wrap img{
+        width: 27% !important;
+    }
+    .banner-text{
+        padding-top: 23.5% !important;
+    }
+    .box-deco-vision{
+        width: 79px !important;
+        height: 4px !important;
+    }
+    .overview-title,.mission-title,.vision-t,.corevalue-title{
+        font-size: 24px !important;
+    }
+    .overview-content,.mission-content,.vision-content,.corevalue-content{
+        font-size: 22px;
+    }
+    
+.corevalue-content-wrap h3{
+    font-size: 22px !important;
+}
+.privacy-wrap ul li:first-child {
+    width: 25% !important;
+}
+.brand-logo img {
+    width: 28% !important;
+}
 }

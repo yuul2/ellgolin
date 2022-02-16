@@ -110,6 +110,7 @@
     background: #fff;
     border-bottom: 1px solid rgb(204, 204, 204);
     padding: 28px;
+    display: none;
 }
 .m_gnb_container{
     width: 1000px;
@@ -173,7 +174,8 @@
     flex-direction: column !important;
     background: #f5f5f5;
 }
-.m_gnb_container .m-icon-wrap{
+.m_gnb_container .m-icon-wrap > .xi-bars{
+    font-weight: 500;
     font-size: 38px;
     color: #333;
 }
@@ -316,16 +318,10 @@ li.menu-head ul.m-sub-menu li a{
 }
 
 .banner-text{
-    padding-top: 8.4% !important;
+    padding-top: 8.4%;
     text-align: center;
 }
 
-@media(max-width:1600px){
-    .banner-text{
-        padding-top: 14% !important;
-        text-align: center;
-    }
-}
 .banner-text-title{
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 700;
@@ -397,11 +393,7 @@ li.menu-head ul.m-sub-menu li a{
     font-size: 18px;
     letter-spacing: 2px;
 }
-@media(max-width:2560px){
-    .banner-text{
-        padding-top: 6% !important;
-    }
-}
+
 
 /* 기업개요 section */
 
