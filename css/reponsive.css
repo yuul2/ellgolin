@@ -62,9 +62,9 @@
     .section-mobile {
         display: none;
     }
-    #aside {
+    /* #aside {
         display: none;
-    }
+    } */
 }
 
 @media (max-width:1200px) {
@@ -73,7 +73,7 @@
     }
 
     /* 모바일메뉴 */
-    section.section-mobile {
+    .mobile-header-top {
         display: block;
     }
     /* 모바일 상위메뉴 */

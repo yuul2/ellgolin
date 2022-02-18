@@ -13,7 +13,7 @@ $(function(){
         // 네비게이션 end
         
         // 모바일 네비게이션 
-        $(function(){
+       
             $('.add-sub-menu').on('click',function(){
                 $('.m-sub-menu').stop().slideDown(300);
                 $('.add-sub-menu').css('display','none');
@@ -67,20 +67,8 @@ $(function(){
             });
             // 고객문의 end 
 
-            $('.m-icon-wrap i').click(function(){
-                $(".open").css({
-                    'display' : 'block'
-                });
-                $(".open").css({
-                    'right' : '-100%'
-                });
-                $(".open").animate({right:"0px"},"linear");
-            });
-            $('.closing').click(function(){
-                $(".open").animate({right:"-100%"},"linear");
-            });
             
-        })
+     
         // 고부가가치 page tab-menu
         $('.food').on('click',function(){
             $('ul.high-tab > li:first-child').addClass('active2');
@@ -223,3 +211,18 @@ $(".close").click(function(){
     $(".thankyou_message").css("display", "none");
 });
 });   
+
+// $(function(){
+//     $('.open-icon').on('click',function(){
+//         $(".open").css({
+//             'display' : 'block'
+//         });
+//         $(".open").css({
+//             'right' : '-100%'
+//         });
+//         $(".open").animate({right:"0px"},"linear");
+//     });
+//     $('.closing').click(function(){
+//         $(".open").animate({right:"-100%"},"linear");
+//     });
+// })
