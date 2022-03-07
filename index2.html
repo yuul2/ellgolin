@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>엘골인 바이오</title>
+        <link rel="shortcut" href="images/favicon-logo.ico">
+        <link rel="icon" href="images/favicon-logo.ico">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+        <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <!-- <script src="js/swiper.min.js"></script> -->
+		
+		<!-- Link Swiper's CSS -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+		<!-- Swiper JS -->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <link rel="stylesheet" href="css/style.css">
+
+
+    </head>
+
+	<style>
+		.kv .mySwiper{margin-top: 85px;}
+		.kv .swiper-slide{background-size: cover; max-width: 1920px; width: 100%; /*height: 837px;*/ height: 100vh; display: flex; align-items: center; box-sizing: border-box; position: relative;}
+		.kv .swiper-slide.main_slide01{background: url(../images/swiper1.png) no-repeat center/cover;  background-position: center; padding-left: 6%;}
+		.kv .swiper-slide.main_slide02{background: url(../images/swiper2.png) no-repeat 0 0; background-position: left; justify-content: flex-end; padding-right: 6%; text-align: right;}
+		.kv .swiper-slide.main_slide03{background: url(../images/noover.png) no-repeat 0 0; background-position: center; justify-content: center; text-align: center; padding-bottom: 15%;}
+		.kv .swiper-slide.main_slide04{background: url(../images/Untitled-4.png) no-repeat 0 0; background-position: right; padding-left: 3%;}
+		.kv .swiper-slide.main_slide05{background: url(../images/swiper5.png) no-repeat 0 0; background-position: center; justify-content: center; text-align: center;}
+        .kv .swiper-slide.main_slide05 .slide_txt h1,
+        .kv .swiper-slide.main_slide05 .slide_txt p{color: #fff;}
+		/* .kv .swiper-slide .slide_txt{position: absolute;} */
+		.kv .swiper-slide [data-aos="fade-up"] {opacity: 0; transform: translate(0, 100px); -webkit-transform: translate(0, 100px); -moz-transform: translate(0, 100px); -ms-transform: translate(0, 100px); -o-transform: translate(0, 100px); }
+		.kv .swiper-slide-active [data-aos="fade-up"]{opacity: 1; transform: translate(0, 0);/* -webkit-transform: translate(0,0); */-moz-transform: translate(0,0);-ms-transform: translate(0,0);-o-transform: translate(0,0);}
+        .kv .swiper-slide .slide_txt h1{font-size: 70px; font-weight: bold; letter-spacing: -0.025em; line-height: 0.8;}
+        .kv .swiper-slide .slide_txt h1 span{font-size: 36px; font-weight: 500; margin-left: 20px;}
+        .kv .swiper-slide .slide_txt p{font-size: 26px; font-weight: 500; letter-spacing: -0.05em; line-height: 1.2; margin-top: 20px;}
+
+        .kv .enter_1024{display: none;}
+        .kv .enter_860{display: none;}
+
+        @media(max-width:1130px){
+            .kv .swiper-slide.main_slide01{background-position: -810px;}
+
+        }
+
+        @media(max-width:1024px){
+            .kv .enter_1024{display: block;}
+            .kv .swiper-slide .slide_txt h1 span{margin: 0;}
+            .kv .swiper-slide .slide_txt p{margin-top: 30px;}
+        }
+
+        @media(max-width:860px){
+            .kv .enter_860{display: block;}
+
+            .kv .swiper-slide{height: 70vh; justify-content: center !important; padding: 0 !important;}
+            .kv .swiper-slide.main_slide04{background-position: right top;}
+            .kv .swiper-slide .slide_txt{text-align: center !important; margin-top: 85px;}
+            .kv .swiper-slide.main_slide01 .slide_txt{margin-top: 230px;}
+            .kv .swiper-slide .slide_txt h1{font-size: 40px;}
+            .kv .swiper-slide .slide_txt h1 span{font-size: 26px;}
+            .kv .swiper-slide .slide_txt p{font-size: 21px;}
+        }
+        @media(max-width:523px){
+            .kv .swiper-slide .slide_txt h1{font-size: 36px;}
+            .kv .swiper-slide .slide_txt h1 span{font-size: 24px;}
+            .kv .swiper-slide .slide_txt p{font-size: 18px;}
+        }
+	</style>
+    <body>
+         <!-- 전체 메뉴  -->
+        <!-- 상단메뉴 desck-top ver.  -->
+        <header class="header-container fixed-top">
+            <div class="w_header_box">
+                <div class="top_logo">
+                    <a href="/index.html">
+                        <img src="/images/logoB.png" alt="엘골인로고"></a>
+                </div>
+                <div class="navi_box">
+                    <div class="navi_box_bg"></div>
+                    <ul>
+                        <li class="menu">
+                            <a href="ceo.html" class="menu-title">
+                                <span>회사소개</span></a>
+                            <div class="submenu_box">
+                                <a href="ceo.html">CEO인사말</a>
+                                <a href="vision.html">이념과비전</a>
+                                <a href="history.html">회사연혁</a>
+                                <a href="facility.html">시설및소개</a>
+                                <a href="infra.html">가족사소개</a>
+                            </div>
+                        </li>
+                        <li class="menu">
+                            <a href="business.html" class="menu-title">
+                                <span>제품소개</span></a>
+                            <div class="submenu_box">
+                                <a href="business.html">의약품</a>
+                                <a href="healthy.html">Healthy life style</a>
+                                <a href="localfood.html">로컬푸드</a>
+                                <!-- <a href="">화장품</a> -->
+                                <!-- <a href="marketing.html">영업/마케팅인프라</a> -->
+                                <!-- <a href="">Foundation</a>
+                                <a href="">프랜차이즈</a> -->
+                            </div>
+                        </li>
+                        <!-- <li class="menu">
+                            <a href="facility.html" class="menu-title">
+                                <span>R&D</span></a>
+                            <div class="submenu_box pd-50">
+                                <a href="facility.html">시설및소개</a>
+                                <a href="research-field.html">연구분야</a>
+                                <a href="results.html">연구성과</a>
+                            </div>
+                        </li> -->
+                        <li class="menu">
+                            <a href="notice.html" class="menu-title">
+                                <span>홍보관</span></a>
+                            <div class="submenu_box pd-45">
+                                <a href="notice.html">소식및행사</a>
+                                <!-- <a href="prcenter.html">PR센터</a> -->
+                            </div>
+                        </li>
+                        <li class="menu">
+                            <a href="adress.html" class="menu-title">
+                                <span>고객문의</span></a>
+                            <div class="submenu_box">
+                                <a href="adress.html">오시는길</a>
+                                <a href="contact.html">1:1문의</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+           <!-- 상단메뉴 mobile ver.  -->
+        <section class="section-mobile fixed-top">
+            <div class="m_gnb_container d-flex">
+                <div class="m_logo_wrap text-left">
+                    <img src="images/logoB.png" alt="m-logo" href="index.html">
+                </div> 
+                <div class="m-icon-wrap text-center">
+                  <i class="xi-bars"></i>
+                </div>
+                </div>
+        </section>
+        <!-- <aside id="aside" class="open">
+            <div class="aside-head">
+                <div class="aside-top d-flex">
+                    <div class="logo"></div>
+                    <i class="xi-close closing"></i>
+                </div>
+            </div>
+            <div class="aside-body">
+                <ul class="mobile_gnb">
+                    <li class="menu-head"><a href="#" class="d-flex on-first">회사소개 <i class="xi-plus add-sub-menu"></i><i class="xi-minus remove-menu "></i></a> 
+                        <ul class="m-sub-menu">
+                            <li><a href="ceo.html">CEO인사말</a></li>
+                            <li><a href="vision.html">이념과비전</a></li>
+                            <li><a href="history.html">회사연혁</a></li>
+                            <li><a href="infra.html">가족사소개</a></li>
+                            <li><a href="adress.html">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-head"><a href="#" class="d-flex on-sec">제품소개 <i class="xi-plus add-sub-menu2 text-right"></i><i class="xi-minus remove-menu-2 text-right"></i></a> 
+                        <ul class="m-sub-menu2">
+                           <li><a href="business.html">의약품</a></li> 
+                            <li><a href="healthy.html">식품및생활용품</a></li>
+                            <li><a href="localfood.html">로컬푸드</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-head"><a href="#" class="d-flex on-3rd">홍보관 <i class="xi-plus add-sub-menu3 text-right"></i><i class="xi-minus remove-menu-3 text-right"></i></a> 
+                        <ul class="m-sub-menu3">
+                            <li><a href="">공지사항</a></li>
+                            <li><a href="notice.html">소식및행사</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-head"><a href="#" class="d-flex on-4rd">고객문의 <i class="xi-plus add-sub-menu4 text-right"></i><i class="xi-minus remove-menu-4 text-right"></i></a> 
+                        <ul class="m-sub-menu4">
+                           <li><a href="contact.html">1:1문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside> -->
+         <!-- 전체 메뉴 End  -->
+        <!-- header-menu END -->
+        <!-- swiper container -->
+        <div id="container">
+            <!-- <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide slide-bg1" id="section-1" tabindex="0">
+                        <div class="contents">
+                            <div class="conTxtBox text-left pd-185">
+                                <h1 data-an="fade-up" data-an-order="1" class="conTit mainTit ft-70">Well-Balanced Life</h1>
+                                <p data-an="fade-up" data-an-order="2" class="conTxt">
+                                    <p class="ft-26 pt-3"> 동서의학의 상생에너지를 선도하는<br>대표 헬스케어 리딩기업 엘골인바이오는<br>
+                                        인류의 건강한 삶에 기여하기 위해 오늘도 노력합니다.</p>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-bg2" id="section-2" tabindex="0">
+                        <div class="contents">
+                            <div class="conTxtBox text-right pd-195">
+                                <p data-an="fade-up" data-an-order="1" class="conTit mainTit ft-70">Medicine 
+                                    <span class="ft-36-md-bk">for a better life</span></p>
+                                <p data-an="fade-up" data-an-order="2" class="conTxt ft-26">엘골인바이오의 무독성 유황특허기술을 기반으로
+                                    한방해독제를 개발하고<br>항암유황주사제를 개발, 제약산업의 미래를 선도하는 기업으로 도약하고 있습니다
+                                    </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-bg3" id="section-3" tabindex="0">
+                        <div class="contents">
+                            <div class="conTxtBox text-center pd-12">
+                                <p data-an="fade-up" data-an-order="1" class="conTit mainTit ft-70">Healthy Life Style Project
+                                    <span class="ft-36-md-bk">through detox</span></p>
+                                <p data-an="fade-up" data-an-order="2" class="conTxt">
+                                    <p class="ft-26 ">“해독(detox)＂이라는 키워드를 기반으로 지속적인 건강솔루션의 연구개발을 통해 생활형 고부가가치제품을 제공합니다.
+                                    </p>
+                                
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide slide-bg4" id="section-4" tabindex="0">
+                        <div class="contents">
+                            <div class="conTxtBox text-left pd-185">
+                                <p data-an="fade-up" data-an-order="1" class="conTit mainTit ft-70">R&D 
+                                    <span class="ft-36-md-bk">with a competitive edge</span></p>
+                                <p data-an="fade-up" data-an-order="2" class="conTxt">
+                                    <p class="ft-26">지난 60여년간 3대에 걸쳐 연구개발해온 세계적 수준의 R&D 역량을<br>바탕으로 제약 산업을 선도할 우수한 의약품을 개발합니다.
+                                    </p>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-bg5" id="section-5" tabindex="0">
+                        <div class="contents">
+                            <div class="conTxtBox text-center pd-19">
+                                <p data-an="fade-up" data-an-order="1" class="conTit mainTit ft-70-wh">Infrastructure
+                                    <span class="ft-36-md-wh">that make more sense</span></p>
+                                <p data-an="fade-up" data-an-order="2" class="conTxt">
+                                    <p class="ft-26-wh">미래의 더 큰 발전을 위해 국내외 파트너십을 강화하며 글로벌 시장을 개척합니다. 
+                                    </p>
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+				
+            </div> -->
+			<!-- // swiper-container -->
+
+			<div class="kv">
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide main_slide01">
+							<div class="slide_txt">
+								<h1 data-aos="fade-up" data-aos-delay="300" data-aos-duration="1300" data-aos-easing="ease-in-out">Well-Balanced Life</h1>
+								<p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1300" data-aos-easing="ease-in-out">동서의학의 상생에너지를 선도하는<br>대표 헬스케어 리딩기업 엘골인바이오는<br>인류의 건강한 삶에 기여하기 위해 오늘도 노력합니다.</p>
+							</div>
+						</div>
+						<div class="swiper-slide main_slide02">
+							<div class="slide_txt">
+								<h1 data-aos="fade-up" data-aos-delay="300" data-aos-duration="1300" data-aos-easing="ease-in-out">Medicine 
+                                    <br class="enter_1024"><span>for a better life</span></h1>
+								<p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1300" data-aos-easing="ease-in-out">엘골인바이오의 무독성 유황특허기술을<br class="enter_860"> 기반으로 한방해독제를 개발하고<br>항암유황주사제를 개발,<br class="enter_860"> 제약산업의 미래를 선도하는 기업으로 도약하고 있습니다</p>
+							</div>
+						</div>
+						<div class="swiper-slide main_slide03">
+							<div class="slide_txt">
+								<h1 data-aos="fade-up" data-aos-delay="300" data-aos-duration="1300" data-aos-easing="ease-in-out">Healthy Life Style Project<br class="enter_1024"><span>through detox</span></h1>
+								<p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1300" data-aos-easing="ease-in-out">"해독(detox)"이라는 키워드를 기반으로 지속적인<br>건강솔루션의 연구개발을 통해<br class="enter_860"> 생활형 고부가가치제품을 제공합니다.</p>
+							</div>
+						</div>
+						<div class="swiper-slide main_slide04">
+							<div class="slide_txt">
+								<h1 data-aos="fade-up" data-aos-delay="300" data-aos-duration="1300" data-aos-easing="ease-in-out">R&D<br class="enter_1024"><span>with a competitive edge</span></h1>
+								<p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1300" data-aos-easing="ease-in-out">지난 60여년간 3대에 걸쳐 연구개발해온<br class="enter_860"> 세계적 수준의 R&D 역량을<br>바탕으로 제약 산업을 선도할 우수한 의약품을 개발합니다.</p>
+							</div>
+						</div>
+						<div class="swiper-slide main_slide05">
+							<div class="slide_txt">
+								<h1 data-aos="fade-up" data-aos-delay="300" data-aos-duration="1300" data-aos-easing="ease-in-out">Infrastructure<br class="enter_1024"><span>that make more sense</span></h1>
+								<p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1300" data-aos-easing="ease-in-out">미래의 더 큰 발전을 위해 국내외 파트너십을<br class="enter_860"> 강화하며 글로벌 시장을 개척합니다.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+            <!-- footer container -->
+            <footer>
+                <div class="footer-wrap bg-light">
+                    <div class="container-fluid">
+                        <div class="row pt-5 pb-3">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-8">
+                                <div class="privacy-wrap">
+                                    <ul class="d-flex">
+                                        <li><a href="">개인정보처리방침</a></li>
+                                        <li>|</li>
+                                        <li><a href="">이메일집단수집거부</a></li>
+                                    </ul>
+                                </div>
+                                <div class="brand-logo pb-4">
+                                    <img src="images/logo.png" alt="">
+                                </div>
+                                <div class="footer-info-wrap">
+                                    <ul>
+                                        <li>주소 : 경기 김포시 북변중로23 2F-5F
+                                        </li>
+                                        <li class="info-tel">Tel : 1533-2018 &nbsp;&nbsp; 사업자등록번호 : 182-81-01479 &nbsp;&nbsp; 대표 : 차준헌</li>
+                                        <li>Copyright ⓒ 2021 Elgoalin. All rights reserved.</li>
+                                    </ul>
+                                </div>
+            
+    
+                            </div>
+                            <div class="col-md-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <script src="js/main.js"></script>
+            <!-- <script src="js/swiper.js"></script> -->
+            <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+            <script>
+                AOS.init();
+            </script>
+
+			<!-- Initialize Swiper -->
+			<script>
+				var swiper = new Swiper(".mySwiper", {
+				  centeredSlides: true,
+				//   autoplay: {
+				// 	delay: 2500,
+				// 	disableOnInteraction: false,
+				//   },
+				loop: true,
+				});
+			  </script>
+        </body>
+    </html>

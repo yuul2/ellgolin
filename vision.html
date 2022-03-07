@@ -81,62 +81,64 @@
             </div>
         </header>
            <!-- 상단메뉴 mobile ver.  -->
-        <section class="section-mobile fixed-top">
-            <div class="m_gnb_container d-flex">
-                <div class="m_logo_wrap text-left">
-                    <img src="images/logoB.png" alt="m-logo" href="index.html">
-                </div> 
-                <div class="m-icon-wrap text-center">
-                 <a href="#">
-                    <i class="xi-bars"></i>
-                 </a> 
+           <div class="mo_header">
+            <div>
+                <div class="mo_header_top">
+                    <div class="header_logo">
+                        <a href="/index.html"><img src="/images/logoB.png" alt="엘골인로고"></a>
+                    </div>
+                    <div class="header_btn">
+                        <button class="btn_gnb"><span class="txt">메뉴</span>
+                            <i class="i1"></i>
+                            <i class="i2"></i>
+                            <i class="i3"></i>
+                            <i class="i4"></i>
+                        </button>
+                    </div>
                 </div>
-                </div>
-        </section>
-        <aside id="aside" class="open">
-            <div class="aside-head">
-                <div class="aside-top d-flex">
-                    <div class="logo"></div>
-                    <i class="xi-close closing"></i>
+                <div class="header_cont">
+                    <nav>
+                        <ul>
+                            <li class="cont_tit">
+                                <p>회사소개<button><img src="/images/arr_gnb.png" alt=""></button></p>
+                                <ul class="header_list">
+                                    <li><a href="ceo.html">CEO인사말</a></li>
+                                    <li><a href="vision.html">이념과비전</a></li>
+                                    <li><a href="history.html">회사연혁</a></li>
+                                    <li><a href="facility.html">시설및소개</a></li>
+                                    <li><a href="infra.html">가족사소개</a></li>
+                                </ul>
+                            </li>
+                            <li class="cont_tit">
+                                <p>제품소개<button><img src="/images/arr_gnb.png" alt=""></button></p>
+                                <ul class="header_list">
+                                    <li><a href="business.html">의약품</a></li>
+                                    <li><a href="healthy.html">Healthy life style</a></li>
+                                    <li><a href="localfood.html">로컬푸드</a></li>
+                                </ul>
+                            </li>
+                            <li class="cont_tit">
+                                <p>홍보관<button><img src="/images/arr_gnb.png" alt=""></button></p>
+                                <ul class="header_list">
+                                    <li><a href="notice.html">소식및행사</a></li>
+                                </ul>
+                            </li>
+                            <li class="cont_tit">
+                                <p>고객문의<button><img src="/images/arr_gnb.png" alt=""></button></p>
+                                <ul class="header_list">
+                                    <li><a href="adress.html">오시는길</a></li>
+                                    <li><a href="contact.html">1:1 문의</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-            <div class="aside-body">
-                <ul class="mobile_gnb">
-                    <li class="menu-head"><a href="#" class="d-flex on-first">회사소개 <i class="xi-plus add-sub-menu"></i><i class="xi-minus remove-menu "></i></a> 
-                        <ul class="m-sub-menu">
-                            <li><a href="ceo.html">CEO인사말</a></li>
-                            <li><a href="vision.html">이념과비전</a></li>
-                            <li><a href="history.html">회사연혁</a></li>
-                            <li><a href="infra.html">가족사소개</a></li>
-                            <li><a href="adress.html">오시는길</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-head"><a href="#" class="d-flex on-sec">제품소개 <i class="xi-plus add-sub-menu2 text-right"></i><i class="xi-minus remove-menu-2 text-right"></i></a> 
-                        <ul class="m-sub-menu2">
-                           <li><a href="business.html">의약품</a></li> 
-                            <li><a href="healthy.html">식품및생활용품</a></li>
-                            <li><a href="localfood.html">로컬푸드</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-head"><a href="#" class="d-flex on-3rd">홍보관 <i class="xi-plus add-sub-menu3 text-right"></i><i class="xi-minus remove-menu-3 text-right"></i></a> 
-                        <ul class="m-sub-menu3">
-                            <li><a href="">공지사항</a></li>
-                            <li><a href="notice.html">소식및행사</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-head"><a href="#" class="d-flex on-4rd">고객문의 <i class="xi-plus add-sub-menu4 text-right"></i><i class="xi-minus remove-menu-4 text-right"></i></a> 
-                        <ul class="m-sub-menu4">
-                           <li><a href="contact.html">1:1문의</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </aside>
-         <!-- 전체 메뉴 End  -->
+        </div>
 
 
         
-        <div class="container-fluid bg-circle pb-140">
+        <div class="container-fluid bg-circle pb-140 ideology_vision">
             <div class="row">
              
                 <div class="col-12 bg-vision">
@@ -149,16 +151,20 @@
             </div>
 
             <div class="row">
-                <div class="col-2"></div>
+                <!-- kjs col-2 *2 삭제 -->
+                <!-- <div class="col-2"></div> -->
                 <div class="col-8 pt-6 page-title-wrap">
-                    <div class="box-deco-vision"></div>
+                    <!-- kjs box-deco-vision삭제 hr추가 -->
+                    <!-- <div class="box-deco-vision"></div> -->
+                    <hr>
                     <h1 class="page-title-text">이념과 비전</h1>
                 </div>
-                <div class="col-2"></div>
+                <!-- <div class="col-2"></div> -->
             </div>
 
-            <div class="row pt-10">
-                <div class="col-2"></div>
+            <div class="row pt-10 vision_cont">
+                <!-- kjs col-2 *2 삭제 -->
+                <!-- <div class="col-2"></div> -->
                 <div class="col-8">
                     <div class="overview-wrap d-flex">
                         <div class="overview-title ft-28">기업개요</div>
@@ -237,7 +243,7 @@
     
                     </div>
                 </div>
-                <div class="col-2"></div>
+                <!-- <div class="col-2"></div> -->
             </div>
 
            
@@ -275,36 +281,6 @@
                 </div>
             </div>
 
-            <div class="m-footer-wrap bg-light">
-                <div class="container-fluid">
-                    <div class="row pt-5 pb-3 mo-pd">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-8">
-                            <div class="privacy-wrap">
-                                <ul class="d-flex">
-                                    <li><a href="">개인정보처리방침</a></li>
-                                    <li>|</li>
-                                    <li><a href="">이메일집단수집거부</a></li>
-                                </ul>
-                            </div>
-                            <div class="brand-logo pb-4">
-                                <img src="images/logo.png" alt="">
-                            </div>
-                            <div class="footer-info-wrap">
-                                <ul>
-                                    <li>주소 : 경기 김포시 북변중로23
-                                    </li>
-                                    <li class="info-tel">Tel : 1533-2018  사업자등록번호 : 182-81-01479  대표 : 차준헌</li>
-                                    <li>Copyright ⓒ 2021 Elgoalin. All rights reserved.</li>
-                                </ul>
-                            </div>
-        
-
-                        </div>
-                        <div class="col-md-2"></div>
-                    </div>
-                </div>
-            </div>
         </footer>
 
         <script src="js/main.js"></script>

@@ -1,4 +1,42 @@
 $(function(){
+    var $header = $('.mo_header');
+    var $btn_gnb = $header.find('.btn_gnb');
+    var $header_cont = $header.find('.header_cont');
+    var $NavOpen = false;
+    $btn_gnb.bind('click', function(){
+        if(!$NavOpen){
+            $header.addClass('gnb_open');
+            $header_cont.stop().slideDown();
+            $NavOpen = true;
+        }
+        else{
+            gnbClose();
+            $(".mo_header .header_cont .cont_tit > ul").stop().slideUp();
+            $(".mo_header .header_cont .cont_tit p").removeClass();
+        }
+    });
+    function gnbClose(){
+    $header.removeClass('gnb_open');
+    $header_cont.stop().slideUp();
+    $NavOpen = false;
+}
+});
+
+$(function(){
+    $(".mo_header .header_cont .cont_tit").on('click',function(){
+        var $this = (this);
+        var mo_header_tit_idx = $(".mo_header .header_cont .cont_tit").index(this);
+        var $NavOpen = false;
+        if(!$NavOpen){
+            // $(".mo_header .header_cont .cont_tit:eq("+mo_header_tit_idx+") > ul.header_list").not($this).stop().slideUp();
+            $(".mo_header .header_cont .cont_tit:eq("+mo_header_tit_idx+") > ul.header_list").stop().slideToggle();
+            $(".mo_header .header_cont .cont_tit:eq("+mo_header_tit_idx+") p").toggleClass("active");
+        }
+    });
+});
+
+
+$(function(){
 
     $('.navi_box>ul>li>a').mouseover(function(){
         $('.navi_box_bg').stop().slideDown(300);
@@ -14,57 +52,6 @@ $(function(){
         
         // 모바일 네비게이션 
        
-            $('.add-sub-menu').on('click',function(){
-                $('.m-sub-menu').stop().slideDown(300);
-                $('.add-sub-menu').css('display','none');
-                $('.remove-menu').attr('style','display : block !important');
-                $('.on-first').addClass('on');
-            });
-            $('.remove-menu').on('click',function(){
-                $('.m-sub-menu').stop().slideUp(300);
-                $('.remove-menu').css('display','none');
-                $('.add-sub-menu').css('display','block');
-                $('.on-first').removeClass('on');
-            });
-            // 회사소개 end
-            $('.add-sub-menu2').on('click',function(){
-                $('.m-sub-menu2').stop().slideDown(300);
-                $('.add-sub-menu2').css('display','none');
-                $('.remove-menu-2').attr('style','display : block !important');
-                $('.on-sec').addClass('on');
-            });
-            $('.remove-menu-2').on('click',function(){
-                $('.m-sub-menu2').stop().slideUp(300);
-                $('.remove-menu-2').css('display','none');
-                $('.add-sub-menu2').css('display','block');
-                $('.on-sec').removeClass('on');
-            });
-            // 제품소개 end 
-            $('.add-sub-menu3').on('click',function(){
-                $('.m-sub-menu3').stop().slideDown(300);
-                $('.add-sub-menu3').css('display','none');
-                $('.remove-menu-3').attr('style','display : block !important');
-                $('.on-3rd').addClass('on');
-            });
-            $('.remove-menu-3').on('click',function(){
-                $('.m-sub-menu3').stop().slideUp(300);
-                $('.remove-menu-3').css('display','none');
-                $('.add-sub-menu3').css('display','block');
-                $('.on-3rd').removeClass('on');
-            });
-            // 홍보관 end 
-            $('.add-sub-menu4').on('click',function(){
-                $('.m-sub-menu4').stop().slideDown(300);
-                $('.add-sub-menu4').css('display','none');
-                $('.remove-menu-4').attr('style','display : block !important');
-                $('.on-4rd').addClass('on');
-            });
-            $('.remove-menu-4').on('click',function(){
-                $('.m-sub-menu4').stop().slideUp(300);
-                $('.remove-menu-4').css('display','none');
-                $('.add-sub-menu4').css('display','block');
-                $('.on-4rd').removeClass('on');
-            });
             // 고객문의 end 
 
             
@@ -89,29 +76,42 @@ $(function(){
             $('.made-noodle-wrap').css('display','none')
         })
         // 비즈니스 page tab-menu 
-        $('.add-content').on('click',function(){
-            $('.s-medi-description').stop().slideDown(300);
-            $('.add-content').css('display','none');
-            $('.closed-content-wrap').css('display','block');
-        });
-     
-        $('#closed').on('click',function(){
-         $('.s-medi-description').stop().slideUp(300);
-         $('.add-content').css('display','block');
-         $('.closed-content-wrap').css('display','none');
-     });
 
-     $('.add-content2').on('click',function(){
-        $('.s-medi-description').stop().slideDown(300);
-        $('.add-content2').css('display','none');
-        $('.closed-content-wrap2').css('display','block');
-    });
+        // kjs 비즈니스 tab-menu view more 수정
+        // $('.add-content').on('click',function(){
+        //     $('.s-medi-description').stop().slideDown(300);
+        //     $('.add-content').css('display','none');
+        //     $('.closed-content-wrap').css('display','block');
+        // });
+
+        $('.add-content').on('click',function(){
+            $('.s-medi-description').slideToggle(300);
+            $('.add-content-wrap').toggleClass('active');
+        });
+
+     
+    //     $('#closed').on('click',function(){
+    //      $('.s-medi-description').stop().slideUp(300);
+    //      $('.add-content').css('display','block');
+    //      $('.closed-content-wrap').css('display','none');
+    //  });
+
+     // kjs 비즈니스 tab-menu view more 수정
+    //  $('.add-content2').on('click',function(){
+    //     $('.s-medi-description').stop().slideDown(300);
+    //     $('.add-content2').css('display','none');
+    //     $('.closed-content-wrap2').css('display','block');
+    // });
+        $('.add-content2').on('click',function(){
+            $('.s-medi-description').slideToggle(300);
+            $('.add-content2 i').css('transform','rotate(180deg)');
+        });
  
-    $('#closed2').on('click',function(){
-     $('.s-medi-description').stop().slideUp(300);
-     $('.add-content2').css('display','block');
-     $('.closed-content-wrap2').css('display','none');
- });
+//     $('#closed2').on('click',function(){
+//      $('.s-medi-description').stop().slideUp(300);
+//      $('.add-content2').css('display','block');
+//      $('.closed-content-wrap2').css('display','none');
+//  });
 
 
 
@@ -209,6 +209,7 @@ $('.chemi-gene').on('click',function(){
 // 팝업창
 $(".close").click(function(){
     $(".thankyou_message").css("display", "none");
+    // $("html").css("overflow","auto");
 });
 });   
 

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>header</title>
+	<!-- <script src="/js/jquery-3.3.1.min.js"></script> -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+</head>
+
+<style>
+	*{
+		letter-spacing: -0.05em;
+		color: #222;
+		font-family: ;
+		margin: 0;
+		padding: 0;
+	}
+	ul, ol{list-style: none;}
+	a{text-decoration: none;}
+	img{width: 100%;}
+
+	.mo_header{display: block;}
+
+	.pc_header header{max-width: 1920px; width: 100%; margin: 0 auto; background: #fff; height: 100px; position: fixed; top: 0; left: 0; z-index: 9999; border-bottom: 1px solid #eee;}
+	.pc_header header .header_top{display: flex; align-items: center; justify-content: space-between; max-width: 1260px; height: 100px; margin: 0 auto;}
+	.pc_header header .header_top .header_logo{max-width: 200px;}
+	.pc_header header .header_top .header_tit ul{display: flex; align-items: center; justify-content: space-between; width: 560px;}
+	.pc_header header .header_top .header_tit ul li{width: 140px; text-align: left;}
+	.pc_header header .header_top .header_tit ul>li.active a{color: #0071d7;}
+	.pc_header header .header_top .header_tit ul li:hover a{color: #0071d7;}
+	.pc_header header .header_top .header_tit ul li a{font-size:20px; font-weight:600;}
+
+	.pc_header header .header_cont_bg{max-width: 1920px; width: 100%; margin: 0 auto; background: #f7f7f7; box-sizing: border-box; padding: 30px 0; display: none;}
+	.pc_header header .header_cont{max-width: 1260px; display: flex; justify-content: flex-end; margin: 0 auto;}
+	.pc_header header .header_cont>div{width: 560px; display: flex; justify-content: space-between;}
+	.pc_header header .header_cont>div li{width: 140px; text-align: left; margin-bottom: 20px;}
+	.pc_header header .header_cont>div li:last-child{margin-bottom: 0;}
+	.pc_header header .header_cont>div li a{display: block;; font-size: 18px; font-weight: 500; width: fit-content;}
+	.pc_header header .header_cont>div li a:hover{color:#0071d7;}
+	.pc_header header .header_cont>div li a::after{display: block; content: ''; border-bottom: solid 1px #0071d7; transform: scaleX(0); transition: transform 250ms ease-in-out; padding-bottom: 0px;}
+	.pc_header header .header_cont>div li a:hover:after{color:#0071d7; transform: scaleX(1); transform-origin:  0% 50%;}
+
+
+	.mo_header{display: none;}
+
+
+	.mo_header{max-width: 1025px; width: 100%; max-height: 99999px; height: 100vh; overflow-y: auto;}
+	.mo_header .mo_header_top{display: flex; justify-content: space-between; width: 100%; box-sizing: border-box; padding: 30px;}
+	.mo_header .mo_header_top .header_logo{max-width: 270px; width: 50%;}
+	.mo_header .header_btn .btn_gnb{display:block;position:absolute;width:52px;height:44px;right:40px;top:50px;background:none;border:none;text-indent:-9999em;overflow:hidden}
+	.mo_header .header_btn .btn_gnb i{display:block;width:100%;height:4px;background:#444;position:absolute;transition:0.3s all}
+	.mo_header .header_btn .btn_gnb i.i1{top:0;}
+	.mo_header .header_btn .btn_gnb i.i2,
+	.mo_header .header_btn .btn_gnb i.i3{top:50%;left:50%;transform:translate(-50%, -50%)}
+	.mo_header .header_btn .btn_gnb i.i4{bottom:0;}
+	.mo_header.gnb_open:after{opacity:1;left:0;}
+	.mo_header.gnb_open .header_btn .btn_gnb{}
+	.mo_header.gnb_open .header_btn .btn_gnb .i1,
+	.mo_header.gnb_open .header_btn .btn_gnb .i4{opacity:0;}
+	.mo_header.gnb_open .header_btn .btn_gnb .i2{width:60px;transform:translate(-50%, -50%) rotate(45deg)}
+	.mo_header.gnb_open .header_btn .btn_gnb .i3{width:60px;transform:translate(-50%, -50%) rotate(-45deg)}
+
+	.mo_header .header_cont{background: #f7f7f7; width: 100%; overflow-y: auto;}
+	.mo_header .header_cont nav>ul>li{background: #fff; box-sizing: border-box; padding: 20px 0 0;}
+	.mo_header .header_cont nav>ul>li>p{font-size: 21px; color: #222; font-weight: 500; margin: 0 30px; padding-bottom: 20px; display: block; display: flex; justify-content: space-between; align-items: center;}
+	.mo_header .header_cont nav>ul>li>p button{width: 20px; background: none; border: none; transform: rotate(360deg);}
+	.mo_header .header_cont nav>ul>li>p button:focus{outline: none;}
+	.mo_header .header_cont nav>ul>li>p.active button{transform: rotate(180deg);}
+	.mo_header .header_cont nav .header_list{background: #f7f7f7; box-sizing: border-box; padding: 20px 0 20px 50px; display: none;}
+	.mo_header .header_cont nav .header_list li{margin-bottom: 20px;}
+	.mo_header .header_cont nav .header_list li:last-child{margin-bottom: 0;}
+	.mo_header .header_cont nav .header_list li>a{font-size: 18px; font-weight: 400; color: #999;}
+
+	.mo_header .header_cont{display: none;}
+
+	@media(max-width:1025px){
+		.pc_header{display: none;}
+		.mo_header{display: block;}
+	}
+	@media(max-width:580px){
+		.mo_header .header_btn .btn_gnb{width: 30px; height: 24px;}
+		.mo_header .header_cont nav>ul>li>p{background-position: 90% 0;}
+	}
+	@media(max-width:400px){
+		.mo_header .header_btn .btn_gnb{top: 40px;}
+	}
+</style>
+<body>
+	<div class="pc_header">
+		<header>
+			<div class="header_top">
+				<div class="header_logo">
+					<a href="/index.html"><img src="/images/logoB.png" alt="엘골인로고"></a>
+				</div>
+				<div class="header_tit">
+					<ul>
+						<li><a href="ceo.html">회사소개</a></li>
+						<li><a href="business.html">제품소개</a></li>
+						<li><a href="notice.html">홍보관</a></li>
+						<li><a href="adress.html">고객문의</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header_cont_bg">
+				<div class="header_cont">
+					<div>
+						<ul>
+							<li><a href="ceo.html">CEO인사말</a></li>
+							<li><a href="vision.html">이념과비젼</a></li>
+							<li><a href="history.html">회사연혁</a></li>
+							<li><a href="facility.html">시설및소개</a></li>
+							<li><a href="infra.html">가족사소개</a></li>
+						</ul>
+						<ul>
+							<li><a href="business.html">의약품</a></li>
+							<li><a href="healthy.html">Healthy life style</a></li>
+							<li><a href="localfood.html">로컬푸드</a></li>
+						</ul>
+						<ul>
+							<li><a href="notice.html">소식및행사</a></li>
+						</ul>
+						<ul>
+							<li><a href="adress.html">오시는길</a></li>
+							<li><a href="contact.html">1:1 문의</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+	<div class="mo_header">
+		<div>
+			<div class="mo_header_top">
+				<div class="header_logo">
+					<a href="/index.html"><img src="/images/logoB.png" alt="엘골인로고"></a>
+				</div>
+				<div class="header_btn">
+					<button class="btn_gnb"><span class="txt">메뉴</span>
+						<i class="i1"></i>
+						<i class="i2"></i>
+						<i class="i3"></i>
+						<i class="i4"></i>
+					</button>
+				</div>
+			</div>
+			<div class="header_cont">
+				<nav>
+					<ul>
+						<li class="cont_tit">
+							<p>회사소개<button><img src="/images/arr_gnb.png" alt=""></button></p>
+							<ul class="header_list">
+								<li><a href="ceo.html">CEO인사말</a></li>
+								<li><a href="vision.html">이념과비전</a></li>
+								<li><a href="history.html">회사연혁</a></li>
+								<li><a href="facility.html">시설및소개</a></li>
+								<li><a href="infra.html">가족사소개</a></li>
+							</ul>
+						</li>
+						<li class="cont_tit">
+							<p>제품소개<button><img src="/images/arr_gnb.png" alt=""></button></p>
+							<ul class="header_list">
+								<li><a href="business.html">의약품</a></li>
+								<li><a href="healthy.html">Healthy life style</a></li>
+								<li><a href="localfood.html">로컬푸드</a></li>
+							</ul>
+						</li>
+						<li class="cont_tit">
+							<p>홍보관<button><img src="/images/arr_gnb.png" alt=""></button></p>
+							<ul class="header_list">
+								<li><a href="notice.html">소식및행사</a></li>
+							</ul>
+						</li>
+						<li class="cont_tit">
+							<p>고객문의<button><img src="/images/arr_gnb.png" alt=""></button></p>
+							<ul class="header_list">
+								<li><a href="adress.html">오시는길</a></li>
+								<li><a href="contact.html">1:1 문의</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script>
+		$(function(){
+			$(".pc_header .header_cont>div>ul").mouseover(function(){
+				var header_cont_idx = $(".pc_header  .header_cont>div>ul").index(this);
+				$(".pc_header header .header_top .header_tit ul>li:eq("+header_cont_idx+")").addClass("active");
+			});
+			$(".pc_header .header_cont>div>ul").mouseleave(function(){
+				var header_cont_idx = $(".pc_header .header_cont>div>ul").index(this);
+				$(".pc_header header .header_top .header_tit ul>li:eq("+header_cont_idx+")").removeClass("active");
+			});
+		});
+		
+		$(function(){
+			$(".pc_header .header_tit").mouseover(function(){
+				$(".pc_header .header_cont_bg").stop().slideDown();
+			});
+			$(".pc_header").mouseleave(function(){
+				$(".pc_header .header_cont_bg").stop().slideUp();
+			});
+		});
+
+		$(function(){
+			var $header = $('.mo_header');
+			var $btn_gnb = $header.find('.btn_gnb');
+			var $header_cont = $header.find('.header_cont');
+			var $NavOpen = false;
+			$btn_gnb.bind('click', function(){
+				if(!$NavOpen){
+					$header.addClass('gnb_open');
+					$header_cont.stop().slideDown();
+					$NavOpen = true;
+					$('html, body').css('overflow-y', 'hidden');
+				}
+				else{
+					gnbClose();
+					$(".mo_header .header_cont .cont_tit > ul").stop().slideUp();
+					$(".mo_header .header_cont .cont_tit p").removeClass();
+				}
+			});
+			function gnbClose(){
+			$header.removeClass('gnb_open');
+			$header_cont.stop().slideUp();
+			$NavOpen = false;
+			$('html, body').css('overflow-y', 'auto')
+		}
+		});
+
+		$(function(){
+			$(".mo_header .header_cont .cont_tit").on('click',function(){
+				var $this = (this);
+				var mo_header_tit_idx = $(".mo_header .header_cont .cont_tit").index(this);
+				var $NavOpen = false;
+				if(!$NavOpen){
+					// $(".mo_header .header_cont .cont_tit:eq("+mo_header_tit_idx+") > ul.header_list").not($this).stop().slideUp();
+					$(".mo_header .header_cont .cont_tit:eq("+mo_header_tit_idx+") > ul.header_list").stop().slideToggle();
+					$(".mo_header .header_cont .cont_tit:eq("+mo_header_tit_idx+") p").toggleClass("active");
+				}
+			});
+		});
+
+		
+	</script>
+	
+</body>
+</html>

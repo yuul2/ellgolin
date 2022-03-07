@@ -1,9 +1,15 @@
-
+@media (max-width:2560px){
+   .w_header_box{
+       max-width: 1664px;
+   }
+}
+@media (max-width:1440px){
+    .w_header_box{
+        max-width: 1190px;
+    }
+}
 
 @media (max-width:2560px) {
-    .w_header_box {
-        max-width: 1664px;
-    }
     .top_logo {
         text-align: left;
     }
@@ -17,6 +23,12 @@
     }
     .banner-text {
         padding-top: 6% !important;
+    }
+    .bg-business .banner-text{
+        padding-top: 5.2% !important;
+    }
+    .box-deco-vision-2 {
+        top: 50%;
     }
 }
 
@@ -87,6 +99,9 @@
 
 }
 @media (max-width:1024px) {
+    .bg-business .banner-text{
+        padding-top: 15.2% !important;
+    }
     .m_gnb_container {
         width: 950px !important;
     }
@@ -100,7 +115,12 @@
     .elgoalin-ceo {
         font-size: 26px !important;
     }
+    
+.factory-area-wrap {
+    transform: translate(224px, -20px) !important;
 }
+}
+
 @media(max-width:912px) {
     .m_gnb_container {
         width: 760px !important;
@@ -172,7 +192,16 @@
     .m-faith-wrap {
         padding-top: 50px;
     }
+    .factory-area-wrap{
+        transform: translate(200px,-20px) !important;
+    }
+    .haccp-img-wrap{
+        width: 12% !important;
+        right: -28px !important;
+        bottom: 24px !important;
+    }
 }
+
 @media(max-width:820px) {
     .banner-text {
         padding-top: 23.5% !important;
@@ -186,14 +215,50 @@
         width: 30%;
     }
     /* 협력사 page end  */
+    .factory-area-wrap{
+        transform: translate(178px,-38px) !important;
+    }
+    .factory-area-wrap h2{
+        font-size: 24px !important;
+    }
+    .factory-area-wrap p{
+        font-size: 16px !important;
+        line-height: 0 !important;
+    }
+    .haccp-img-wrap {
+        width: 15% !important;
+        right: -36px !important;
+        bottom: 14px !important;
+}
 }
 @media(max-width:768px) {
     .m_gnb_container {
         width: 700px !important;
     }
     /* 모바일 메뉴 end */
+    .bg-business .banner-text{
+        padding-top: 19.2% !important;
+    }
 }
-
+@media (max-width:623px) {
+    .bg-facility .banner-text h1 {
+        font-size: 38px !important;
+    }
+    .bg-facility .banner-text p {
+        word-break: break-all !important;
+    }
+    .page-title-wrap{
+        text-align: center !important;
+    }
+    .box-deco-vision{
+        transform: translate(213%,50%) !important;
+    }
+}
+@media(max-width:560px){
+    .bg-business .banner-text{
+        padding-top: 25.2% !important;
+    }
+}
 @media (max-width:540px) {
     .m_gnb_container {
         width: 490px !important;
@@ -233,7 +298,7 @@
         }
     /* 회사연혁 page end */
     .page-title-wrap{
-        padding: 80px 100px;
+        padding: 80px 100px !important;
     }
     .overview-wrap {
         flex-direction: column;
@@ -245,6 +310,7 @@
     .box-deco-vision {
         transform: translate(179%,50%) !important;
         top: 36% !important;
+        left: 90px !important;
     }
     .overview-title, .mission-title, .vision-t, .m-corevalue-title {
         width: 100% !important;
@@ -259,6 +325,18 @@
     /* footer  */
     .mo-pd{
         padding: 0 16px;
+    }
+    .bg-facility .banner-text h1 {
+        font-size: 38px !important;
+}
+.bg-facility .banner-text{
+    padding-top: 28.5% !important;
+}
+}
+
+@media(max-width:468px){
+    .bg-business .banner-text{
+        padding-top: 29.2% !important;
     }
 }
 @media(max-width:414px){
@@ -275,7 +353,7 @@
         font-size: 28px !important;
     }
     .page-title-wrap{
-        padding: 80px 100px 0;
+        padding: 80px 100px 0 !important;
     }
     /* ceo page  */
     .box-deco {
@@ -320,12 +398,24 @@
     .history-top-pad {
         padding-top: 5% !important;
     }
+
+    
 }
 
 @media(max-width:412px){
     .box-deco-vision {
         transform: translate(122%,50%) !important;
         top: 58% !important;
+    }
+    .bg-facility .banner-text h1 {
+        font-size: 30px !important;
+        line-height: 50px !important;
+    }
+    .bg-facility .banner-text {
+        padding-top: 46.5% !important;
+    }
+    .box-deco-vision{
+        left: 70px !important;
     }
 }
 @media (max-width: 390px){
@@ -353,7 +443,9 @@
 .banner-text {
     padding-top: 46.5% !important;
 }
-
+.bg-business .banner-text{
+    padding-top: 35.2% !important;
+}
 .page-title-wrap {
     padding: 80px 10px 0 !important;
 }
@@ -367,6 +459,8 @@
 .privacy-wrap ul li:nth-child(2) {
     width: 2.1% !important; 
 }
+
+
 }
 @media(max-width:375px){
     .m_gnb_container {
@@ -398,8 +492,17 @@
     .m-footer-wrap{
         display: block !important;
     }
-    .footer-wrap{
+    /* .footer-wrap{
         display: none;
+    } */
+    .bg-facility .banner-text{
+        padding-top: 46.5% !important;
+    }
+    .box-deco-vision{
+        left: 63px !important;
+    }
+    .bg-facility .banner-text h1{
+        font-size: 28px !important;
     }
 }
 @media(max-width:360px){
@@ -413,5 +516,20 @@
         transform: translate(103%,50%) !important;
         top: 52% !important;
     }
-    
+    .bg-facility .banner-text{
+        padding-top: 56.5% !important;
+    }
+    .box-deco-vision{
+        left: 63px !important;
+    }
+    .bg-facility .banner-text h1{
+        font-size: 24px !important;
+        line-height: 50px !important;
+    }
+    .banner-explain {
+        font-size: 16px;
 }
+}
+
+
+/* 비즈니스 page  */

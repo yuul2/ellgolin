@@ -17,7 +17,7 @@
 
     </head>
     <body>
-          <!-- 전체 메뉴  -->
+         <!-- 전체 메뉴  -->
         <!-- 상단메뉴 desck-top ver.  -->
         <header class="header-container fixed-top">
             <div class="w_header_box">
@@ -82,57 +82,62 @@
             </div>
         </header>
            <!-- 상단메뉴 mobile ver.  -->
-        <section class="section-mobile fixed-top">
-            <div class="m_gnb_container d-flex">
-                <div class="m_logo_wrap text-left">
-                    <img src="images/logoB.png" alt="m-logo" href="index.html">
-                </div> 
-                <div class="m-icon-wrap text-center">
-                  <i class="xi-bars"></i>
+           <div class="mo_header">
+            <div>
+                <div class="mo_header_top">
+                    <div class="header_logo">
+                        <a href="/index.html"><img src="/images/logoB.png" alt="엘골인로고"></a>
+                    </div>
+                    <div class="header_btn">
+                        <button class="btn_gnb"><span class="txt">메뉴</span>
+                            <i class="i1"></i>
+                            <i class="i2"></i>
+                            <i class="i3"></i>
+                            <i class="i4"></i>
+                        </button>
+                    </div>
                 </div>
-                </div>
-        </section>
-        <aside id="aside" class="open">
-            <div class="aside-head">
-                <div class="aside-top d-flex">
-                    <div class="logo"></div>
-                    <i class="xi-close closing"></i>
+                <div class="header_cont">
+                    <nav>
+                        <ul>
+                            <li class="cont_tit">
+                                <p>회사소개<button><img src="/images/arr_gnb.png" alt=""></button></p>
+                                <ul class="header_list">
+                                    <li><a href="ceo.html">CEO인사말</a></li>
+                                    <li><a href="vision.html">이념과비전</a></li>
+                                    <li><a href="history.html">회사연혁</a></li>
+                                    <li><a href="facility.html">시설및소개</a></li>
+                                    <li><a href="infra.html">가족사소개</a></li>
+                                </ul>
+                            </li>
+                            <li class="cont_tit">
+                                <p>제품소개<button><img src="/images/arr_gnb.png" alt=""></button></p>
+                                <ul class="header_list">
+                                    <li><a href="business.html">의약품</a></li>
+                                    <li><a href="healthy.html">Healthy life style</a></li>
+                                    <li><a href="localfood.html">로컬푸드</a></li>
+                                </ul>
+                            </li>
+                            <li class="cont_tit">
+                                <p>홍보관<button><img src="/images/arr_gnb.png" alt=""></button></p>
+                                <ul class="header_list">
+                                    <li><a href="notice.html">소식및행사</a></li>
+                                </ul>
+                            </li>
+                            <li class="cont_tit">
+                                <p>고객문의<button><img src="/images/arr_gnb.png" alt=""></button></p>
+                                <ul class="header_list">
+                                    <li><a href="adress.html">오시는길</a></li>
+                                    <li><a href="contact.html">1:1 문의</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-            <div class="aside-body">
-                <ul class="mobile_gnb">
-                    <li class="menu-head"><a href="#" class="d-flex on-first">회사소개 <i class="xi-plus add-sub-menu"></i><i class="xi-minus remove-menu "></i></a> 
-                        <ul class="m-sub-menu">
-                            <li><a href="ceo.html">CEO인사말</a></li>
-                            <li><a href="vision.html">이념과비전</a></li>
-                            <li><a href="history.html">회사연혁</a></li>
-                            <li><a href="infra.html">가족사소개</a></li>
-                            <li><a href="adress.html">오시는길</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-head"><a href="#" class="d-flex on-sec">제품소개 <i class="xi-plus add-sub-menu2 text-right"></i><i class="xi-minus remove-menu-2 text-right"></i></a> 
-                        <ul class="m-sub-menu2">
-                           <li><a href="business.html">의약품</a></li> 
-                            <li><a href="healthy.html">식품및생활용품</a></li>
-                            <li><a href="localfood.html">로컬푸드</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-head"><a href="#" class="d-flex on-3rd">홍보관 <i class="xi-plus add-sub-menu3 text-right"></i><i class="xi-minus remove-menu-3 text-right"></i></a> 
-                        <ul class="m-sub-menu3">
-                            <li><a href="">공지사항</a></li>
-                            <li><a href="notice.html">소식및행사</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-head"><a href="#" class="d-flex on-4rd">고객문의 <i class="xi-plus add-sub-menu4 text-right"></i><i class="xi-minus remove-menu-4 text-right"></i></a> 
-                        <ul class="m-sub-menu4">
-                           <li><a href="contact.html">1:1문의</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </aside>
-         <!-- 전체 메뉴 End  -->
-        <div class="container-fluid bg-circle pb-140">
+        </div>
+         <!-- kjs notice_cont class 추가 -->
+        <div class="container-fluid bg-circle pb-140 notice_cont">
             <div class="row">
             
                 <div class="col-12 bg-information">
@@ -144,51 +149,52 @@
      
             </div>
 
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-4 pt-6 page-title-wrap">
-                    <div class="box-deco-vision"></div>
+            <div class="row notice_tit">
+                <!-- kjs col-2 *2 col-4 삭제 -->
+                <!-- <div class="col-2"></div> -->
+                <div class="col-8 pt-6 page-title-wrap">
+                    <!-- kjs box-deco-vision 삭제 hr 추가 -->
+                    <!-- <div class="box-deco-vision"></div> -->
+                    <hr>
                     <h1 class="page-title-text">소식 및 행사</h1>
                 </div>
-                <div class="col-4"></div>
-                <div class="col-2"></div>
+                <!-- <div class="col-4"></div>
+                <div class="col-2"></div> -->
             </div>
 
-          <div class="row">
-              <div class="col-2"></div>
+          <div class="row notice_table">
+              <!-- kjs col-2 *2 삭제 -->
+              <!-- <div class="col-2"></div> -->
               <div class="col-8">
                 
 
-                 <table class="mt-8 results-table">
-                        <colgroup>
-                            <col style="width: 300px;">
-                            <col style="width: 900px;">
-                            <col style="width: 200px;">
-                        </colgroup>
+                <div class="mt-8 results-table" id="custom-responsive-table">
+                    <table class="table">
+                        <!-- <col style="width: 300px;">
+                        <col style="width: 900px;">
+                        <col style="width: 200px;"> -->
                         <thead class="text-center">
                             <tr>
-                                <th>구분</th>
-                                <th>제목</th>
-                                <th>등록일</th>
-
+                                <td>구분</td>
+                                <td>제목</td>
+                                <td>등록일</td>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="text-center">취임소식</td>
-                                <td><a href="article1.html">로컬푸드 공동대표 취임식 소식</a></td>
-                                <td class="text-center">2022.01.24</td>
+                                <td data-title="구분" class="text-center">취임소식</td>
+                                <td data-title="제목"><a href="article1.html">로컬푸드 공동대표 취임식 소식</a></td>
+                                <td data-title="등록일" class="text-center">2022.01.24</td>
                             </tr>
                             <tr>
-                                <td class="text-center">행사</td>
-                                <td><a href="article2.html">‘2021 사랑의 김치 나누기 행사’</a></td>
-                                <td class="text-center">2021.12.11</td>
+                                <td data-title="구분" class="text-center">행사</td>
+                                <td data-title="제목"><a href="article2.html">‘2021 사랑의 김치 나누기 행사’</a></td>
+                                <td data-title="등록일" class="text-center">2021.12.11</td>
                             </tr>
                         </tbody>
-                        
-                 </table>
+                    </table>
               </div>
-              <div class="col-2"></div>
+              <!-- <div class="col-2"></div> -->
           </div>
 
      
