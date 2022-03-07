@@ -103,6 +103,103 @@
     color: #2254a5 !important;
     font-weight: 700;
 }
+<<<<<<< Updated upstream
+=======
+.m_gnb_container{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+@media (max-width:1200px){
+	.w_header_box {
+    display: none;
+    
+}
+
+/*------네비상위메뉴------*/
+.menu {
+    max-width: 130px;
+}
+.menu > a {
+    width: 130px;
+    font-size: 16px;
+}
+
+/*------네비하위메뉴------*/
+.navi_box_bg {
+    max-width: 1200px;
+    top: 82px;
+    left: -212px;
+}
+	
+.submenu_box > a {
+    width: 130px;
+	font-size:14px;
+}
+
+/* 모바일메뉴 */
+
+/* 모바일 상위메뉴 */
+.m_gnb_container{
+    display: block;
+    padding: 1% 0;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    transition-duration: 0.5s;
+}
+.m-icon-wrap{
+    font-size: 38px;
+}
+.m_logo_wrap{
+    margin-top: 7px;
+    padding-left: 6%;
+    float: left;
+}
+.m_logo_wrap img{
+    width: 18%;
+}
+
+}
+
+
+
+
+@media (max-width:1046px){
+	.navi_box_bg {
+    top: 75px;
+}
+}
+@media(max-width:1440px){
+    .w_header_box{
+        width: 1260px;
+    }
+    .navi_box ul{
+        margin-top: 10px;
+    }
+    .navi_box_bg{
+        top: 65px !important;
+    }
+    .menu:hover > a > span{
+        padding-bottom: 15px !important;
+    }
+}
+@media (max-width:2560px){
+    .w_header_box{
+        max-width: 1664px;
+    }
+    .top_logo {
+        text-align: left;
+    }
+    .top_logo a img{
+        width:69%;
+    }
+	.navi_box_bg {
+		width:2560px;
+        top: 77px;
+		left:-739px;
+}
+}
+>>>>>>> Stashed changes
 
 /* 모바일 메뉴 */
 
@@ -280,6 +377,15 @@
     text-align: center;
 }
 
+<<<<<<< Updated upstream
+=======
+@media(max-width:1600px){
+    .banner-text{
+        padding-top: 11.5% !important;
+        text-align: center;
+    }
+}
+>>>>>>> Stashed changes
 .banner-text-title{
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 700;
@@ -308,6 +414,7 @@
 
 .page-title-wrap{
     position: relative;
+    padding-left: 0 !important;
 }
 .page-title-text{
     font-family: 'Noto Sans KR', sans-serif;
@@ -351,7 +458,15 @@
     font-size: 18px;
     letter-spacing: 2px;
 }
+<<<<<<< Updated upstream
 
+=======
+@media(max-width:2560px){
+    .banner-text{
+        padding-top: 6%;
+    }
+}
+>>>>>>> Stashed changes
 
 /* 기업개요 section */
 
@@ -363,7 +478,7 @@
     background:#c01f25;
     top: 60%;
     left: 0;
-    transform: translate(17%,50%);
+    transform: translate(2%,50%);
 }
 .box-deco-vision-2{
     position: absolute;
@@ -469,6 +584,7 @@
 }
 
 /* 협력사소개 page-css */
+<<<<<<< Updated upstream
 
 .partners-logo img{
     width: 30%;
@@ -496,6 +612,27 @@
     padding-left: 30px;
 }
 
+=======
+.infra-img-wrap img{
+    width: 100%;
+}
+.partners-1{
+    background-image: url(../images/family-banner2.jpg);
+    width: 100%;
+    height: 480px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media(max-width:1600px){
+    .partners-1{
+        height: 440px;
+    }
+}
+.el-science img{
+    width: 100%;
+}
+>>>>>>> Stashed changes
 /* 사업소개 page */
 
 /* 사업소개  */
